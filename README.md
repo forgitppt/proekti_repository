@@ -79,6 +79,8 @@ git pull
 
 git push
 
+vo slucaj da sednite na drug pc
+Control Panel - User Accounts - Credentials Manager - Remove git
 
 
 Lista so zadacki:
