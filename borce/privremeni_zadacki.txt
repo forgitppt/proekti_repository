@@ -1,0 +1,37 @@
+1. da se najde najgolem broj od 3 broja
+
+a = 12
+b = 22
+c = 1
+
+a = 12
+b = 12
+c = 1
+
+2. da se iprintaat broevi od 0 do 10
+
+3. da se najde najgolemiot broj vo nizata
+int[] niza = {1, 33,23 ,43, 11,74, 123,3453,0 }
+
+4. da e najde najmaliot
+
+5. da se najde nivnata suma
+
+6. da se najde prosecna vrednost
+
+7. da se najdat partnite broevi
+
+8. Da se napravi objekt student koj naleduva od covek
+
+covekt ima tezina i ime
+studentot ima indeks
+
+covekot i studentot mozat da traat
+
+studentot moze da uci
+
+
+9. da se naprav funkcija za presmetka na faktoriel
+
+5! = 5*4*3*2*1
+
