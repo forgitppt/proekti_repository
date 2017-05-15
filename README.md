@@ -44,16 +44,21 @@ git config --global user.email "nastavni4kata@gmail.com"
 Lista od najcesti git komandi:
 
 #za da se dodadat fajlovite koi sakame da gi komitirame
+
 git add .
 
 #da gi komitirame fajlovite so odredena poraka
+
 git commit -m "poraka na komitot"
 
 #da gi povlecime izmenite (od ostanatite korisnici na repoto) 
+
 #Seogas APSOLUTNO sekogas pred 'git push' pravete 'git pull'
+
 git pull
 
 #za da gi uplodirame nasite promenite na server
+
 git push
 
 
