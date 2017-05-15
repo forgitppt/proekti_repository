@@ -80,7 +80,7 @@ git push
 
 Lista so zadacki:
 
-	-sortirani100broevi
+	-sortiraj100broevi
 
 
 
