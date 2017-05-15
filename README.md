@@ -14,3 +14,5 @@ roekti_repository
 		#-detebr2
 			#
 			#-proektot na dete broj 2
+
+otvori go kako raw za da vidis vizuelno
