@@ -7,24 +7,39 @@ roekti_repository
 
 	#
 
-	#-hello_world
+	#-dete br 1
+
+	#	#
+
+	#	#-proekt br 1 na dete broj 1
+
+	#	#
+
+	#	#-proekt br 2 na dete broj 1
+
+	#
+
+	#-dete br 2
+
+	#	#
+
+	#	#-proekt br 1 na dete broj 2
+
+	#	#
+
+	#	#-proekt br 2 na dete broj 2
+
+	#
+
+	#-nastavni4kata
 
 		#
 
-		#-detebr1
-
-		#	#
-
-		#	#-proektot na dete broj 1
+		#-proekt br 1 na nastavni4kata
 
 		#
 
-		#-detebr2
-
-			#
-
-			#-proektot na dete broj 2
-
+		#-proekt br 2 na nastavni4kata
 
 
 Otvorete comandna linija t.e command prompt.
