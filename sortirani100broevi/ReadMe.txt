@@ -1,7 +1,7 @@
 пон, 15 мај 17:56:28 CEST 2017
  
  
-Da se sostavi aplikacija koja ke sortira numericka niza so 10000 elementi.
+Da se sostavi aplikacija koja ke sortira numericka niza so 100 (ili 100000) elementi.
 Najpvin taa niza treba da se napolni so random broevi.
 Potoa da se isprinta. Potoa da se sortira. I na kraj povtorno da se isprinta.
 
