@@ -55,6 +55,9 @@ git config --global user.name "Nastavni4kata"
 
 git config --global user.email "nastavni4kata@gmail.com"
 
+za da se proverat settinzite koristeteja komantadat 
+
+git config --list
 
 Lista od najcesti git komandi:
 
