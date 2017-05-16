@@ -31,7 +31,7 @@ public class Main {
 			BrojNaObidi = BrojNaObidi + 1;
 
 			if (VnesenBroj == ZamislenBroj) {
-				System.out.println("Jas zamisliv pogolem broj ");
+				System.err.println("----- BRAVO -----");
 				Povtori = false;
 			}
 
@@ -45,6 +45,6 @@ public class Main {
 				Povtori = true;
 			}
 		} while (Povtori);
-	System.err.println(" Bravo. Uspea da go pogodis brojot od " + BrojNaObidi + " obidi");
+	System.err.println(" Odlicno. Uspea da go pogodis brojot od " + BrojNaObidi + " obidi");
 	}
 }
