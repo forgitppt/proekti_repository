@@ -9,16 +9,19 @@ public class Main {
 		int b = 12;
 		int c = 1;
 		int d;
-		if (a >= b && a >= c) {
+		if (a > b && a > c || a >= b && a > c) {
 			d = a;
 			System.out.println("brojot " + d + " e najgolem");
-		} else if (b >= a && b >= c) {
+		} else if (b > a && b > c || b >= a && b > c) {
 			d = b;
 			System.out.println("brojot " + d + " e najgolem");
-		} else if (c >= a && c >= b) {
+		} else if (c > a && c > b || c > a && c >= b) {
 			d = c;
 			System.out.println("brojot " + d + " e najgolem");
 
+		} else if (a == b && a == c) {
+			d = a;
+			System.out.println("site broevi se " + d);
 		}
 
 	}
