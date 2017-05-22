@@ -13,7 +13,7 @@ public class Main {
 		System.err.println("******* Sortiranje na broevi *******");
 		System.err.println("* nizata se polni so random broevi *");
 		System.err.println("** potoa ke gi naredi po redosled **");
-		System.err.println("****** od najgolem kon najmal *******");
+		System.err.println("****** od najgolem kon najmal ******");
 		System.err.println("************************************");
 
 		// Izbor na kolkava niza ke se upotrebuva
