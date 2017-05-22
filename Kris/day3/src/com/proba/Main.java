@@ -4,11 +4,29 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		int[] niza = { 3, 2, 6, 12, 8, 9 };
-		isprintaj(niza);
-		System.out.println();
+		int[] niza = { 2, 4, 6, 7, 6, 4, 2 };
+		//7/2 = 3
+		//i se dvizi od 0 do 2
 		
-		sort(niza);
+		//za i = 0 j = (7 - 1) - 0 = 6
+		//za i = 1 j = (7 - 1) - 1 = 5
+		//za i = 2 j = (7 - 1) - 2 = 4
+		boolean isAnagram = true;
+		int maxIndex = niza.length / 2;
+		for (int i = 0; i < maxIndex; i++) {
+			int j = (niza.length-1)-i;
+			if(niza[i] != niza[j]){
+				isAnagram = false;
+				break;
+			}
+		}
+
+		System.out.println(isAnagram);
+		// int[] niza = { 3, 2, 6, 12, 8, 9, 0 };
+		// isprintaj(niza);
+		// System.out.println();
+		//
+		// sort(niza);
 	}
 
 	public static void isprintaj(int[] nizaA) {
