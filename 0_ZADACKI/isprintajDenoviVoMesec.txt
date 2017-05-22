@@ -1,0 +1,35 @@
+пон, 22 мај 17:52:27 CEST 2017
+ 
+
+Da se sostavi aplikacija koja kako vlezni parametri ke dobie 
+	mesec, den od nedelata za prviot den od mesecot
+
+Na primer juli, sabota
+ili pak 7, sabota
+	juli e 7 mi mesec
+
+juli e mesecot, sabota e prviot den od nedelata vo koj se paga prviot den od mesecot
+	1vi juli e vo sabota
+
+     Јули 2017        
+не по вт ср че пе са  
+                   1  
+ 2  3  4  5  6  7  8  
+ 9 10 11 12 13 14 15  
+16 17 18 19 20 21 22  
+23 24 25 26 27 28 29  
+30 31 
+
+za maj
+
+maj, ponedelnik
+ili pak 5, ponedelnik
+	maj e 5 ti mesec
+
+      Мај 2017        
+не по вт ср че пе са  
+    1  2  3  4  5  6  
+ 7  8  9 10 11 12 13  
+14 15 16 17 18 19 20  
+21 22 23 24 25 26 27  
+28 29 30 31  
