@@ -1,0 +1,71 @@
+пон, 22 мај 18:16:20 CEST 2017
+ 
+Moram da znam da napisam:
+
+-for ciklus
+	for(int i = 0; i < 10; i++){
+	} 
+
+-if statement
+	if(a > b){
+
+	}
+
+-class
+	class Stydent {
+
+	}
+
+-deklariranje na broj
+	int broj;
+
+-deklariranje niza od broevi
+	int[] nizaOdBroevi;
+
+-Koja e razlikata pomegu klasa i objekt ?
+
+-Kako se nasleduva od odredena klasa
+
+-Kolku argumenti ima default konstruktorot od java
+
+-Koj tip na classa se naoga na vrvot na hierarhijata
+
+-zosto bi deklarirale privatna promenliva ?
+
+-Kako se vikaat metodite cija cel e da zemat (procitaat) ili pak da zapisat vrednost na instantna promeliva
+
+-Napisi barem edna primena na klucniot zbor this (i objasnija)
+
+-Kako se pristapuva do 3tioe element vo edna niza
+
+-Zosto bi nasledile od nekoj objekt ? koi se benefitite od toa ?
+
+-Dokolku imame klasa 'Covek' i klasa 'Student'
+	koja bi bila relacijata pomegu niv ?
+	kako bi ja izrazile programski taa relacija ?
+
+-za sto se koristi klucniot zbor final
+	napisi barem eden primer
+	objasni gi pridobivkite i ogranicuvanjata
+	kade bi upotrebil final ?
+	a kade ne bi smeelo da ima final ?
+
+-2 promenlivi A=1, B=2
+	kako da se zamenat nivnite vrednosti ?
+
+-Kakvi relacii bi postavil pomegu krug i cilindar ?
+	kako bi gi kreiral minimalnite klasi za tie objekti ?
+
+-Napravi class A i class B
+	B extends A
+	preoptereti 3 metodi vo B po sloboden izbor
+
+	potoa napravi metoda a1 vo A koja vraka vrednost 1
+	potoa napravi metoda a2 vo A koja vraka vrednost 10 pati pogolema od onaa sto e pratena vo argumentot
+
+	metoda b1 koja sekogas vraka 10 pati pogolema vrednost od a1
+	metoda b2 koja ja vraka istata vrednost od a2 dokolku vratenata vrednost e neparna, i dvojno pogolema dokolku e parna
+
+
+
+

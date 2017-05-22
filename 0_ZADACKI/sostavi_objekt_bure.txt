@@ -1,0 +1,18 @@
+пон, 22 мај 18:08:33 CEST 2017
+ 
+ 
+Da se sostavi objekt so ime bure
+
+bureto vo sekoj moment sodrzi informacija za brojot na litri voda sto gi sodrzi
+
+isto taka ima opcija da se nadopolnuva i opcija da se prazni
+
+Polnenjeto/praznenjeto se odviva so zadavanje na polnenje/praznenje odredena kolicina
+	na primer korisnikot (Main) treba da moze da izdade naredba napolni go bureto so 5 novi litri
+	ili pak isprazni od bureto 10 litri
+
+Vnimanie bureto ima kapacitet koj se zadava pri negovoto kreiranje (toj kapacitet nesmee da bide negativen)
+Nemoze da se isprazne bure za 10 litri dokolku vo nego ima preostanato samo 5
+isto taka nemoze da se dopolne za 30 litri dokolku kapacitetot na bureto e samo 14 litri
+
+

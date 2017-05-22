@@ -1,5 +1,7 @@
 # proekti_repository
 
+Proveruvajte oglasna tabla (oglasnaTabla.txt)
+
 Folderska struktura na proekti_repository
 
 

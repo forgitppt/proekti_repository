@@ -1,0 +1,19 @@
+пон, 22 мај 18:03:50 CEST 2017
+ 
+ 
+Da se najde sumata na cifrite od eden broj
+	na primer:
+	123 = 1 + 2 + 3 = 6
+	101 = 1 + 0 + 1 = 2
+	15  = 1 + 5 = 6
+
+potoa da se najde najgolemiot zbir na cifrite pomegu broevite 1225 i 1235
+
+na primer najgolemiot zbir pomegu 10 - 15 e 6
+
+10 = 1
+11 = 2
+12 = 3
+13 = 4
+14 = 5
+15 = 6
