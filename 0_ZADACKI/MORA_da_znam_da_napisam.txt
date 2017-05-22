@@ -1,0 +1,50 @@
+пон, 22 мај 18:16:20 CEST 2017
+ 
+Moram da znam da napisam:
+
+-for ciklus
+	for(int i = 0; i < 10; i++){
+	} 
+
+-if statement
+	if(a > b){
+
+	}
+
+-class
+	class Stydent {
+
+	}
+
+-deklariranje na broj
+	int broj;
+
+-deklariranje niza od broevi
+	int[] nizaOdBroevi;
+
+-Koja e razlikata pomegu klasa i objekt ?
+
+-Kako se nasleduva od odredena klasa
+
+-Kolku argumenti ima default konstruktorot od java
+
+-Koj tip na classa se naoga na vrvot na hierarhijata
+
+-zosto bi deklarirale privatna promenliva ?
+
+-Kako se vikaat metodite cija cel e da zemat (procitaat) ili pak da zapisat vrednost na instantna promeliva
+
+-Napisi barem edna primena na klucniot zbor this (i objasnija)
+
+-Kako se pristapuva do 3tioe element vo edna niza
+
+-Zosto bi nasledile od nekoj objekt ? koi se benefitite od toa ?
+
+
+
+
+
+
+
+
+
