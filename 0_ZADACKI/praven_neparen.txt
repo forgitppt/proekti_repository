@@ -1,0 +1,6 @@
+пон, 22 мај 20:52:32 CEST 2017
+ 
+ 
+Da se napravi funkcija (daliEParen) koja ke vraka true ako e paren false ako ne e
+
+bonus funkcija da se proveri dali edna bukva e soglaska ili samoglaska

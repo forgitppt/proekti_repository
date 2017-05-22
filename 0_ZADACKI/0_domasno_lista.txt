@@ -10,6 +10,7 @@ ________________________________________________________________________________
 					|               |               |               |               |               |
 MORA_da_znam_da_napisam.txt		|               |               |               |               |               |
 					|               |               |               |               |               |
+praven_neparen.txt			|               |               |               |               |               |
 anagram.txt				|               |               |               |               |               |
 isprintajDenoviVoMesec.txt		|               |               |               |               |               |
 sortiraj100broevi.txt			|               |               |               |               |               |
