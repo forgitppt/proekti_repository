@@ -1,0 +1,14 @@
+Tue May 23 18:32:27 CEST 2017
+
+
+
+public static char busavaAzbuka(char bukva) {
+
+}
+
+
+da se dopolni funkcijata taka sto dokolku na vlez se pusti 'A' funkcijata da vrati 'B'
+za 'B' da vrati 'C'
+za 'C' da vrati 'D' itn
+za 'Z' da vrati 'A'
+
