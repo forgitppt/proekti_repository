@@ -13,7 +13,7 @@ public class Calendar {
 		for (int M = 1; M <= 12; M++) {
 			// odreduvanje na denovite plus februari kade ima 28 dena
 			if ((godina % 365 == 0) && M == 2)
-				days[M] = 29;
+				days[M] = 28;
 			// printane na mesecite
 			System.out.println("          " + months[M] + " " + godina);
 			System.out.println("_____________________________________");
