@@ -12,15 +12,22 @@ Moram da znam da napisam:
 	}
 
 -class
-	class Stydent {
+	class Student {
 
 	}
 
--deklariranje na broj
+-deklariranje na numericka promenliva
 	int broj;
+
+-deklariranje na promenliva od tip boolean
 
 -deklariranje niza od broevi
 	int[] nizaOdBroevi;
+
+-kako se deklarira promenliva ?
+
+-zemi list hartija i napisi for ciklus koj gi ispisuva broevite od 0  do 9, kolku vreme ti bese potrebno ?
+	treba da e pod 1 minuta
 
 -Koja e razlikata pomegu klasa i objekt ?
 

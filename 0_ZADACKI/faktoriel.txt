@@ -1,0 +1,10 @@
+Tue May 23 18:23:15 CEST 2017
+
+
+funkcija koja presmetuva faktoriel
+
+primer
+5! = 5*4*3*2*1
+
+da se napise funkcijata i da se povika od main
+
