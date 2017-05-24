@@ -1,7 +1,5 @@
 package com.karti;
 
-import javax.management.RuntimeErrorException;
-
 public class Karta {
 
 	// validni vrednosti za boja
