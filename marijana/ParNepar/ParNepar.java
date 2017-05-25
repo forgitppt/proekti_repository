@@ -1,4 +1,4 @@
-package org.gitvezba;
+//package org.gitvezba;
 
 import java.util.Scanner;
 
