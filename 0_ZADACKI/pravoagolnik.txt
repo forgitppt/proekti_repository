@@ -1,0 +1,9 @@
+чет, 25 мај 17:31:51 CEST 2017
+ 
+ 
+Napravi klasa Pravoagolnik
+zacuvaj gi osnovnite potrebni informacii vo promenlivi (state)
+napravi metoda za presmetka na povrsinata na pravoagolnikot
+potoa napravi druga metoda koja ke zema 2 pravoagolnici i ke kazuva koj od niv ima pogolema povrsina
+
+
