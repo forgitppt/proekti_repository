@@ -20,3 +20,9 @@ pravilena definicija za anagram e
 a word, phrase, or name formed by rearranging the letters of another, such as cinema, formed from iceman.
 
 
+
+anagram 2
+
+napravi ja aplikacijata da moze kontinuirano da se vnesuvaat novi zborovi
+koga ke ispecati dali zborot e anagram ili ne, da dozvoli citanje na nov zbor
+koga zborot e STOP aplikacijata da zapri i da se ispecati statistika kolkav procent od vnesenite zborovi bile anagrami

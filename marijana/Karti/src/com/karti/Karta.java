@@ -1,9 +1,11 @@
 package com.karti;
 
-import javax.management.RuntimeErrorException;
-
+//public class Karta extends Object {
 public class Karta {
 
+	//vo ovaa klasa this pokazuva na Karta
+	//super pokazuva na Object
+	
 	// validni vrednosti za boja
 	public static final String KARO = "karo";
 	public static final String SRCE = "srce";
@@ -20,11 +22,19 @@ public class Karta {
 	private String brojka;
 	private String boja;
 
+	public Karta() {
+
+	}
+	
 	public Karta(String brojka, String boja) {
 		setBoja(boja);
 		setBrojka(brojka);
 	}
 
+	public String getBoja(){
+		return boja;
+	}
+	
 	public void setBoja(String boja) {
 		if (boja.equals(KARO) || boja.equals(SRCE) || boja.equals(PIK) || boja.equals(TREF)) {
 			this.boja = boja;

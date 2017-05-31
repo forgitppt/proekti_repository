@@ -76,3 +76,65 @@ Moram da znam da napisam:
 
 
 
+
+======= nadolu e od java 1
+ za zapamtuvanje
+-Mora da se znae kako se deklarira promenliva
+int broj; //validno deklariranje na promenliva
+int broj{ //nevalidno treba ; namesto {
+broj int; //nevalidno redosledot e biten, mora prvin tipot pa imeto
+iNt broj; //nevalidno N e golema treba site da se mali
+  (t.e onaka kako sto e definiran tipot)
+INT broj; //nevalidno site se golemi INT a podatocniot tip e int
+char bukva //nevalidno falat ; na kraj
+
+-Mora da se znaat site 8 primitivni tipovi
+
+-Mora da se znaat defaltnite vrednosti na tie primitivi
+ brojkite imaat vo princip 0, boolean ima false
+
+-Defaltna vrednost za site objekti e null
+
+-Za da se sozdade nekoj object mora da bide povikan odreden konstuktor
+
+-pravenje na objekt e ist nacin kako i so obicen int
+tipot imetoNaPromenlivata =  vrednost
+int broj = 0;
+Student s = new Student();
+String s = "nekakov tekst";
+Object o = new Object();
+
+-za da se pristapi na nesto vo objektot se koristi .
+ bilo toa da e druga promenliva ili pak metoda
+s.ime = "nesto";
+s.nekojaMetoda();
+
+-if
+//validen if
+if (a < 10 ){
+ a = a*10;
+}
+
+//nevaliden fali zagrada
+if (a < 10 {
+ a = a*10;
+}
+
+nevaliden nema {
+if (a < 10 )
+ a = a*10;
+}
+
+//nevaliden ima ;
+if (a < 10 );
+ a = a*10;
+}
+
+
+
+imame mnogu primeri na blog, ima uste milioni primeri na net
+morame da ja naucime sintaksata
+
+mora da se znae kako se pisuva if,for,while, metoda, clasa i taka natamu
+tie sintakticki raboti ednostavno treba da se zapamtat
+

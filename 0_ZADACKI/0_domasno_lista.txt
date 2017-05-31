@@ -14,6 +14,8 @@ ________________________________________________________________________________
 MORA_da_znam_da_napisam.txt		|               |               |               |               |               |
 					|               |               |               |               |               |
 					|               |               |               |               |               |
+test_java1.txt				|               |               |               |               |               |
+pravoagolnik.txt			|               |               |               |               |               |
 praven_neparen.txt			|               |               |               |               |               |
 faktoriel.txt				|               |               |               |               |               |
 anagram.txt				|               |               |               |               |               |

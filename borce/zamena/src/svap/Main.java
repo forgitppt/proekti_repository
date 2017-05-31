@@ -14,6 +14,8 @@ public class Main {
 		b = c;
 		System.out.println("zamenata za a e " + a);
 		System.out.println("zamenata za b e " + b);
+
+//test
 	}
 
 }

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="broevi/src"/>
+	<classpathentry kind="src" path="Karti/src"/>
+	<classpathentry kind="src" path="ParNepar"/>
+	<classpathentry kind="src" path="sort100numbers/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="Karti/bin"/>
+</classpath>
