@@ -1,0 +1,54 @@
+Tue May 23 21:57:43 CEST 2017
+
+
+
+zadacata se sostoi od poveke delovi
+
+prviot del e da se inicijalizira niza so golemina od 15 elementi
+
+sekoj element vo nizata e nekakov random broj
+	t.e treba da ja popolnite nizata so 15 random broevi
+
+potoa pocnuvate na sekoj broj vo nizata da dodavata +1 osven za brojot 9
+na primer za niza od 3 broevi(vie imate niza od 15), ako izgeneriranata niza e
+
+1 5 7
+	treba da gi zgolemite site za 1 i ke se ispecati niza
+2 6 8 
+	na sleden cekor treba da ispisi
+3 7 9
+	na sleden cekor 3 i 7 ke gi zgolemime na 4 i 8
+	no bidejki imame 9 posebna procedura
+	imeno za 9 ke namaluvame po 1
+	znaci posle 3 7 9 ke imame
+4 8 8
+	na sleden cekor adresata 2 prodolzuvame da ja namaluvame za 1, dodeka ostanatite gi zgolemuvame za 1
+	znaci 4 ke stani 5, 8 ke stani 9, a poslednata 8ka ke stani 7
+5 9 7
+	5 seuste ne e 9, pa prodolzuvame da zgolemuvame za 1 i imame 6
+	sledno imame 9ka znaci tamu pocnuvame da namaluvame za 1 namesto dosegasnoto zgolemuvanje za 1, i imame 8ka
+	7kata prodolzuvame da ja namaluvame i imame 6ka
+6 8 6
+7 7 5
+8 6 4
+9 5 3
+8 4 2
+7 3 1
+6 2 0
+	sega na pozicija 3 imame 0, koga stigni nula pocnuvame pak da sobirame
+	i 0 stanuva 1 i za taa pozicija ponatamu sobirame se dodeka ne stigne 9
+5 1 1
+4 0 2
+3 1 3
+2 2 4
+1 3 5
+0 4 6
+1 5 7
+2 6 8
+3 7 9
+
+i taka natmau
+za da vi e polesno sto se slucuva gledajte vertikalno i ke zabelezite deka sekoj broj se zgolemuva pa se namaluva pa pak se zgolemuva
+
+
+

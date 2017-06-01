@@ -1,0 +1,20 @@
+пон, 22 мај 18:49:07 CEST 2017
+ 
+ 
+Napravi clasa Tocka
+	sekoja tocka ima x i y koordinati
+	
+	napravi metoda za sporedba na 2 tocki, t.e  metoda koja ke kazuva koja tocka e povisoko vo koordinate sistem
+
+(0,1) e povisoko od (0,0)
+
+	isto taka sporedba koja tocka e po levo
+	(0,1) e polevo od (1,0)
+
+
+Potoa napravi nova klasa linija koja ke e sostavena od 2 tocki
+	pocetna i krajna tocka
+
+Napravi funkcija koja ke odreduva relacija megu 2 linii
+	liniite moze da se secat, da se sofpagaat/paralelni/secat/ne se dopiraat
+	

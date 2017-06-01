@@ -1,0 +1,28 @@
+пон, 22 мај 17:57:03 CEST 2017
+ 
+ 
+Da se sostavi zadaca koja ke odreduva dali nekoja niza na karakteri e anagram
+na primer
+"10" ne e anagram
+"101" e anagram
+"ana" e anagram
+"vizija" ne e anagram
+
+odlukata dali e 'anagram' ili ne treba da ja nosite vrz osnova na toa
+dali zborot se cita isto od levo na desno i od desno na levo
+
+bidejki e anagram
+spectatorial = poetastrical
+no anagram so prerasporeduvanje na bukvite
+
+pravilena definicija za anagram e
+
+a word, phrase, or name formed by rearranging the letters of another, such as cinema, formed from iceman.
+
+
+
+anagram 2
+
+napravi ja aplikacijata da moze kontinuirano da se vnesuvaat novi zborovi
+koga ke ispecati dali zborot e anagram ili ne, da dozvoli citanje na nov zbor
+koga zborot e STOP aplikacijata da zapri i da se ispecati statistika kolkav procent od vnesenite zborovi bile anagrami

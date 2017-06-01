@@ -1,0 +1,140 @@
+пон, 22 мај 18:16:20 CEST 2017
+ 
+Moram da znam da napisam:
+
+-for ciklus
+	for(int i = 0; i < 10; i++){
+	} 
+
+-if statement
+	if(a > b){
+
+	}
+
+-class
+	class Student {
+
+	}
+
+-deklariranje na numericka promenliva
+	int broj;
+
+-deklariranje na promenliva od tip boolean
+
+-deklariranje niza od broevi
+	int[] nizaOdBroevi;
+
+-kako se deklarira promenliva ?
+
+-zemi list hartija i napisi for ciklus koj gi ispisuva broevite od 0  do 9, kolku vreme ti bese potrebno ?
+	treba da e pod 1 minuta
+
+-Koja e razlikata pomegu klasa i objekt ?
+
+-Kako se nasleduva od odredena klasa
+
+-Kolku argumenti ima default konstruktorot od java
+
+-Koj tip na classa se naoga na vrvot na hierarhijata
+
+-zosto bi deklarirale privatna promenliva ?
+
+-Kako se vikaat metodite cija cel e da zemat (procitaat) ili pak da zapisat vrednost na instantna promeliva
+
+-Napisi barem edna primena na klucniot zbor this (i objasnija)
+
+-Kako se pristapuva do 3tioe element vo edna niza
+
+-Zosto bi nasledile od nekoj objekt ? koi se benefitite od toa ?
+
+-Dokolku imame klasa 'Covek' i klasa 'Student'
+	koja bi bila relacijata pomegu niv ?
+	kako bi ja izrazile programski taa relacija ?
+
+-za sto se koristi klucniot zbor final
+	napisi barem eden primer
+	objasni gi pridobivkite i ogranicuvanjata
+	kade bi upotrebil final ?
+	a kade ne bi smeelo da ima final ?
+
+-2 promenlivi A=1, B=2
+	kako da se zamenat nivnite vrednosti ?
+
+-Kakvi relacii bi postavil pomegu krug i cilindar ?
+	kako bi gi kreiral minimalnite klasi za tie objekti ?
+
+-Napravi class A i class B
+	B extends A
+	preoptereti 3 metodi vo B po sloboden izbor
+
+	potoa napravi metoda a1 vo A koja vraka vrednost 1
+	potoa napravi metoda a2 vo A koja vraka vrednost 10 pati pogolema od onaa sto e pratena vo argumentot
+
+	metoda b1 koja sekogas vraka 10 pati pogolema vrednost od a1
+	metoda b2 koja ja vraka istata vrednost od a2 dokolku vratenata vrednost e neparna, i dvojno pogolema dokolku e parna
+
+
+
+
+
+======= nadolu e od java 1
+ za zapamtuvanje
+-Mora da se znae kako se deklarira promenliva
+int broj; //validno deklariranje na promenliva
+int broj{ //nevalidno treba ; namesto {
+broj int; //nevalidno redosledot e biten, mora prvin tipot pa imeto
+iNt broj; //nevalidno N e golema treba site da se mali
+  (t.e onaka kako sto e definiran tipot)
+INT broj; //nevalidno site se golemi INT a podatocniot tip e int
+char bukva //nevalidno falat ; na kraj
+
+-Mora da se znaat site 8 primitivni tipovi
+
+-Mora da se znaat defaltnite vrednosti na tie primitivi
+ brojkite imaat vo princip 0, boolean ima false
+
+-Defaltna vrednost za site objekti e null
+
+-Za da se sozdade nekoj object mora da bide povikan odreden konstuktor
+
+-pravenje na objekt e ist nacin kako i so obicen int
+tipot imetoNaPromenlivata =  vrednost
+int broj = 0;
+Student s = new Student();
+String s = "nekakov tekst";
+Object o = new Object();
+
+-za da se pristapi na nesto vo objektot se koristi .
+ bilo toa da e druga promenliva ili pak metoda
+s.ime = "nesto";
+s.nekojaMetoda();
+
+-if
+//validen if
+if (a < 10 ){
+ a = a*10;
+}
+
+//nevaliden fali zagrada
+if (a < 10 {
+ a = a*10;
+}
+
+nevaliden nema {
+if (a < 10 )
+ a = a*10;
+}
+
+//nevaliden ima ;
+if (a < 10 );
+ a = a*10;
+}
+
+
+
+imame mnogu primeri na blog, ima uste milioni primeri na net
+morame da ja naucime sintaksata
+
+mora da se znae kako se pisuva if,for,while, metoda, clasa i taka natamu
+tie sintakticki raboti ednostavno treba da se zapamtat
+
