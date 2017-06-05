@@ -87,8 +87,11 @@ public class Main {
 		spil.dodadiKarta(j2);
 		
 		System.out.println(spil);
+		//System.out.println("43 pred " +spil.karti.get(43));
+		
 		spil.izmesaj();
 		System.out.println("izmesan" +spil);
+		//System.out.println("43 po " +spil.karti.get(43));
 		
 //		Igrac i = new Igrac("Petko");
 //		Igrac i2 = new Igrac();
