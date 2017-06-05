@@ -10,10 +10,15 @@ Proveruvajte oglasna tabla (oglasnaTabla.txt)
 	-fajl so prasanja i zabeleski
 		MORA_da_znam_da_napisam.txt
 
+*******************************************************************************
 
-se gledame vo cetvrtok vo (24 may)
+
+se gledame vo ponedelnik na 5ti juni
 	povtorete go materijalot 
+	i napravete git push
 
+
+*******************************************************************************
 
 Vo odnos na rasporedot i casovite:
 
