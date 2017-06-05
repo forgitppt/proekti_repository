@@ -7,9 +7,9 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int[] niza = new int[10];
+		int[] niza = new int[100];
 		for (int i = 0; i < niza.length; i++) {
-			niza[i] = (int) (Math.random() * 50 + 1);
+			niza[i] = (int) (Math.random() * 200 + 1);
 		}
 		for (int j = 0; j < niza.length; j++) {
 			System.out.print(" " + niza[j]);
