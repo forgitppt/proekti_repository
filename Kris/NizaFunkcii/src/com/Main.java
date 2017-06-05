@@ -6,7 +6,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		int[] niza = new int[15];
+		int[] niza = new int[5];
 		printaj(niza);
 		System.out.println();
 		promena(niza);
@@ -29,7 +29,7 @@ public class Main {
 
 		for (int i = 0; i < nizaPodredi.length; i++) {
 			promeniNiza = i;
-				temp = nizaPodredi[i];
+				//temp = nizaPodredi[i];
 				nizaPodredi[i] = nizaPodredi[i]+1;
 				//nizaPodredi[promeniNiza] = temp;
 				
