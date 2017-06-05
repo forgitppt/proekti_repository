@@ -26,13 +26,12 @@ public class Spil {
 		for (int i = 0; i < karti.size(); i++) {
 			s = s + "   " + karti.get(i) + "\n";
 		}
-
 		return s;
 	}
 
 	public void izmesaj() {
 		Random r = new Random();
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < karti.size()*10; i++) {
 			int adresa1=r.nextInt(karti.size());
 			int adresa2=r.nextInt(karti.size());
 			

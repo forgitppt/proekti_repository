@@ -47,26 +47,52 @@ public class Main {
 		//Pivo moeOmileno = toceno;
 		//moeOmileno.b
 		//toceno.bakterijaA
-		
-		
-		Karta k = new Karta("5", Karta.KARO);
-		Karta k2 = new Karta("6", Karta.PIK);
-		Karta k3 = new Karta("7", Karta.PIK);
-		
+//		
+//		
+//		Karta k = new Karta("5", Karta.KARO);
+//		Karta k2 = new Karta("6", Karta.PIK);
+//		Karta k3 = new Karta("7", Karta.PIK);
+//		
+//		Spil spil = new Spil();
+//		spil.dodadiKarta(k);
+//		spil.dodadiKarta(k2);
+//		spil.dodadiKarta(k3);
+//		
+//		//pred mesanje
+//		System.out.println(spil);
+//		
+//		spil.izmesaj();
+//		
+//		//poslem mesanje
+//		System.out.println(spil);
+
+
 		Spil spil = new Spil();
-		spil.dodadiKarta(k);
-		spil.dodadiKarta(k2);
-		spil.dodadiKarta(k3);
 		
-		//pred mesanje
+		//sozdadi spil od 54 karti
+		for (int i = 0; i < Karta.SITE_BOI.length; i++) {
+			String momentalnaBoja = Karta.SITE_BOI[i];
+			for (int j = 0; j < Karta.SITE_BROJKI.length; j++) {
+				String momentalnaBrojka = Karta.SITE_BROJKI[j];
+				
+				Karta k = new Karta(momentalnaBrojka, momentalnaBoja);
+				spil.dodadiKarta(k);
+			}
+		}
+		
+		Joker j1 = new Joker();
+		Joker j2 = new Joker();
+		
+		spil.dodadiKarta(j1);
+		spil.dodadiKarta(j2);
+		
 		System.out.println(spil);
-		
 		spil.izmesaj();
+		System.out.println("izmesan" +spil);
 		
-		//poslem mesanje
-		System.out.println(spil);
-
-
+//		Igrac i = new Igrac("Petko");
+//		Igrac i2 = new Igrac();
+//		System.out.println(i2);
 	}
 
 	public static void print(String s) {
