@@ -14,7 +14,7 @@ public class Mail {
 
 		String[] spil = new String[53];
 		int brojNaKarti = 1;
-		for (int i = 1; i < 5; i++) {
+		for (int i = 0; i < 4; i++) {
 			if (i == 1) {
 				bojata = Karti.BAKLAVA;
 			}
@@ -48,7 +48,7 @@ public class Mail {
 				}
 
 				spil[brojNaKarti] = (j + " " + bojata + "|" + kartata);
-//				System.out.println(brojNaKarti + " ---> " + spil[brojNaKarti]);
+				System.out.println(brojNaKarti + " ---> " + spil[brojNaKarti]);
 				brojNaKarti++;
 			}
 		}

@@ -19,14 +19,14 @@ public class Main {
 
 		// print("aaaaa");
 
-		//Joker j = new Joker();
-		Karta k = new Karta("5",Karta.SRCE);
-		Joker j = new Joker("5",Karta.SRCE);
-		j.setBoja(Karta.TREF);
-		j.setBrojka(Karta.KING);
-		// System.out.println(j.toString());
-		System.out.println(k);
-		System.out.println(j);
+//		//Joker j = new Joker();
+//		Karta k = new Karta("5",Karta.SRCE);
+//		Joker j = new Joker("5",Karta.SRCE);
+//		j.setBoja(Karta.TREF);
+//		j.setBrojka(Karta.KING);
+//		// System.out.println(j.toString());
+//		System.out.println(k);
+//		System.out.println(j);
 
 		
 		
@@ -47,6 +47,26 @@ public class Main {
 		//Pivo moeOmileno = toceno;
 		//moeOmileno.b
 		//toceno.bakterijaA
+		
+		
+		Karta k = new Karta("5", Karta.KARO);
+		Karta k2 = new Karta("6", Karta.PIK);
+		Karta k3 = new Karta("7", Karta.PIK);
+		
+		Spil spil = new Spil();
+		spil.dodadiKarta(k);
+		spil.dodadiKarta(k2);
+		spil.dodadiKarta(k3);
+		
+		//pred mesanje
+		System.out.println(spil);
+		
+		spil.izmesaj();
+		
+		//poslem mesanje
+		System.out.println(spil);
+
+
 	}
 
 	public static void print(String s) {
