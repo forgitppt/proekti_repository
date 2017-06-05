@@ -17,7 +17,7 @@ se gledame vo ponedelnik na 5ti juni
 	povtorete go materijalot 
 	i napravete git push
 
-
+nemojte da zaboravite da napravite push !!!
 *******************************************************************************
 
 Vo odnos na rasporedot i casovite:
