@@ -77,62 +77,65 @@ public class Main {
 
 		// ---------------day 7
 
-		Spil spil = Spil.napraviPrivremenMalSpilZaTestiranje();
-		spil.izmesaj();
-		System.out.println(spil);
-
-		Igrac igrac1 = new Igrac("Mandarina");
-		Igrac igrac2 = new Igrac("Dinja");
-		Igrac igrac3 = new Igrac("Banana");
-		Igrac igrac4 = new Igrac("Kivi");
-
-		ArrayList<Igrac> listaNaIgraci = new ArrayList<>();
-		listaNaIgraci.add(igrac1);
-		listaNaIgraci.add(igrac2);
-		listaNaIgraci.add(igrac3);
-		listaNaIgraci.add(igrac4);
-
-		boolean daliIgrataEZavrsena = false;
-		// narednata linija e "vrti se dodeka igrata ne e zavrsena"
-		while (!daliIgrataEZavrsena) {
-
-			for (int i = 0; i < listaNaIgraci.size(); i++) {
-				Karta izvlecenaKarta = spil.izvleciKarta();
-				if (izvlecenaKarta != null) {
-					listaNaIgraci.get(i).kartiNaIgracot.add(izvlecenaKarta);
-				} else {
-					// privremeno resenie
-					daliIgrataEZavrsena = true;
-					break;
-				}
-			}
-		}
-
-		//
-		System.out.println(spil);
-		for (int i = 0; i < listaNaIgraci.size(); i++) {
-			System.out.println(listaNaIgraci.get(i));
-		}
+//		Spil spil = Spil.napraviPrivremenMalSpilZaTestiranje();
+//		spil.izmesaj();
+//		System.out.println(spil);
+//
+//		Igrac igrac1 = new Igrac("Mandarina");
+//		Igrac igrac2 = new Igrac("Dinja");
+//		Igrac igrac3 = new Igrac("Banana");
+//		Igrac igrac4 = new Igrac("Kivi");
+//
+//		ArrayList<Igrac> listaNaIgraci = new ArrayList<>();
+//		listaNaIgraci.add(igrac1);
+//		listaNaIgraci.add(igrac2);
+//		listaNaIgraci.add(igrac3);
+//		listaNaIgraci.add(igrac4);
+//
+//		boolean daliIgrataEZavrsena = false;
+//		// narednata linija e "vrti se dodeka igrata ne e zavrsena"
+//		while (!daliIgrataEZavrsena) {
+//
+//			for (int i = 0; i < listaNaIgraci.size(); i++) {
+//				Karta izvlecenaKarta = spil.izvleciKarta();
+//				if (izvlecenaKarta != null) {
+//					listaNaIgraci.get(i).kartiNaIgracot.add(izvlecenaKarta);
+//				} else {
+//					// privremeno resenie
+//					daliIgrataEZavrsena = true;
+//					break;
+//				}
+//			}
+//		}
+//
+//		//
+//		System.out.println(spil);
+//		for (int i = 0; i < listaNaIgraci.size(); i++) {
+//			System.out.println(listaNaIgraci.get(i));
+//		}
+//		
+//		Igrac igrac5 = new Igrac("Ananas");
+//		igrac5.kartiNaIgracot.add(new Karta("2", Karta.SRCE));
+//		igrac5.kartiNaIgracot.add(new Karta("3", Karta.SRCE));
+//		igrac5.kartiNaIgracot.add(new Karta("4", Karta.SRCE));
+//		System.out.println(igrac5);
+//		System.out.println(igrac5.firliPrvataZatvorenaKarta());
+//		System.out.println(igrac5);
+//		System.out.println(igrac5.firliPrvataZatvorenaKarta());
+//		System.out.println(igrac5);
+//		
+//		//
+//		System.out.println();
+//		
+//		NaredenSpilKartiVoSredina naredenoKupceVoSredina = new NaredenSpilKartiVoSredina();
+//		naredenoKupceVoSredina.dodadiKartaVoSredina(new Karta(Karta.ACE, Karta.SRCE));
+//		boolean dali = naredenoKupceVoSredina.daliMozeDaSeDodadeKartataVoSredina(new Karta("2", Karta.TREF));
+//		System.out.println("dali moze da se dodade: "+dali);
+//		System.out.println(naredenoKupceVoSredina);
 		
-		Igrac igrac5 = new Igrac("Ananas");
-		igrac5.kartiNaIgracot.add(new Karta("2", Karta.SRCE));
-		igrac5.kartiNaIgracot.add(new Karta("3", Karta.SRCE));
-		igrac5.kartiNaIgracot.add(new Karta("4", Karta.SRCE));
-		System.out.println(igrac5);
-		System.out.println(igrac5.firliPrvataZatvorenaKarta());
-		System.out.println(igrac5);
-		System.out.println(igrac5.firliPrvataZatvorenaKarta());
-		System.out.println(igrac5);
 		
-		//
-		System.out.println();
-		
-		NaredenSpilKartiVoSredina naredenoKupceVoSredina = new NaredenSpilKartiVoSredina();
-		naredenoKupceVoSredina.dodadiKartaVoSredina(new Karta(Karta.ACE, Karta.SRCE));
-		boolean dali = naredenoKupceVoSredina.daliMozeDaSeDodadeKartataVoSredina(new Karta("2", Karta.TREF));
-		System.out.println("dali moze da se dodade: "+dali);
-		System.out.println(naredenoKupceVoSredina);
-		
+		Karta k = new Karta("7",Karta.PIK);
+		System.out.println(k);
 	}
 
 	public static void print(String s) {
