@@ -47,6 +47,10 @@ public class Karta {
 		throw new RuntimeException("Nevalidna vrednost za boja: " + boja);
 	}
 
+	public String getBrojka(){
+		return brojka;
+	}
+	
 	public void setBrojka(String brojka) {
 		// proverka od 2 - 10
 		int broj;

@@ -25,10 +25,24 @@ public class Igrac {
 		kartiNaIgracot.add(k);
 	}
 	
-	public void firliKarta(){
-		//todo
-		//kartiNaIgracot.remove(k);
+	//ova e koga sakame da ja frlime najgornata otvorena karta na igracot
+	public Karta firliPrvataOtvorenaKarta(){
+			if(kartiNaIgracot.size() == 0){
+				return null;//ili ke frlime greska
+			}
+			Karta najgornata = kartiNaIgracot.get(kartiNaIgracot.size()-1);
+			kartiNaIgracot.remove(kartiNaIgracot.size()-1);
+			return najgornata;
 	}
+	
+	public Karta firliPrvataZatvorenaKarta(){
+		if(kartiNaIgracot.size() == 0){
+			return null;//ili ke frlime greska
+		}
+		Karta najgornata = kartiNaIgracot.get(0);
+		kartiNaIgracot.remove(0);
+		return najgornata;
+}
 	
 	public void setPoeni(int poeni){
 		this.poeni = poeni;
