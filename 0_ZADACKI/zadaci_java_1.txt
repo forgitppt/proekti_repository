@@ -1,0 +1,75 @@
+чет, 25 мај 17:50:47 CEST 2017
+ 
+ 
+ Print numbers from 1 too 100
+ from 10 to 15
+ 0,2,4..10000
+ 0,10,20,30
+
+Print arguments passed to console
+
+Sum up all numbers from 0 to 100
+ from m to n
+
+Input 2 numbers and print all relations if they are true or false
+ ==,!=,<,>,<=,>=
+
+N!
+
+Fibonachi
+
+Print matrix n x m
+
+resi ja nizata 1/1 + 1/2 + 1/3 ... so preciznost taja i taja
+
+isprintaj bukvi od 'A' do 'Z' a-z 0-9
+
+<< and >> operatori
+
+binarni operatori
+
+najgolemiot paren broj, najmal neparen, i dvata
+ najgolemiot broj deliv so 15
+ broj najblisku do 50
+
+vnesuvas km, i kazuvas trcacot dali istrcal maraton/polu maraton/100m etc
+ i kazuvas kolku nepotrebni metri istrcal
+
+sobiraj broevi se dodeka ne e vnesen brojot 77
+ potoa ispecatija nivnata sum
+
+true false
+(-8 >= 9) || (14 > 2)
+(5 > 0) && (7 > 0)
+(8 != 7) && (4 > 4)
+!(8 >= 2*3) || (7 >= 11)
+
+int x = 10;
+int y = 27;
+if (x > y){
+    x = x + y;
+}
+Out.print(x);
+
+int x = -7;
+
+if(x > 0){
+   Out.println(x + 10);
+}
+else if (x == 0){
+   Out.println(x);
+}
+else{
+   Out.println(x - 10);
+}
+
+if (x > 10){
+   Out.println("Above average");
+   if (x > 20){
+      Out.println("Should continue with the program");
+   else {
+      Out.println("May want to continue with the program");
+   }
+else{
+   Out.println("Do not continue, move to another section");
+}

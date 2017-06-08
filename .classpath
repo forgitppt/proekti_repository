@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="Alex_MK/PogodiBrojV2/src"/>
+	<classpathentry kind="src" path="Alex_MK/SortirajBroevi/src"/>
+	<classpathentry kind="src" path="borce/zamena/src"/>
+	<classpathentry kind="src" path="Kris/podrediNizapoGolemina/src"/>
+	<classpathentry kind="src" path="Kris/randomNizaPodredi/src"/>
+	<classpathentry kind="src" path="marijana/sort100numbers/src"/>
+	<classpathentry kind="src" path="nastavni4kata/sortiraj100broevi/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="Alex_MK/PogodiBrojV2/bin"/>
+</classpath>

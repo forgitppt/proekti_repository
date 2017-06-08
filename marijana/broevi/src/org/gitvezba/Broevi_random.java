@@ -6,22 +6,23 @@ import java.util.Random;
 public class Broevi_random {
 
 	public static void main(String[] args) {
+
+		int[] numbers = new int[15];
+		int i = 0;
 		
+		
+		Random numbers1 = new Random();
+		for (i = 0; i < numbers.length; i++) {
+			numbers[i] = numbers1.nextInt(10);
+System.out.print(numbers[i] + " ");
+             
 			
-			int temp;
-			int[] numbers = new int[8];
-
-			for (int i = 0; i < numbers.length; i++) {
-				Random rand = new Random();
-				numbers[i] = rand.nextInt(100) + 1;
-				System.out.println("Numbers Generated: " + numbers[i]);
-			}
-			Arrays.sort(numbers); 
-
-		    for (int i = 0; i < numbers.length; i++) {
-		       System.out.print(numbers[i] + " ");
+			
 		}
-	}
-	}
+		}
 
+		 
+			 
+		        
+	}
 

@@ -1,0 +1,434 @@
+чет, 25 мај 17:24:24 CEST 2017
+ 
+ 
+1) ============================
+Koja e pravilnata sintaksa za main ?
+   A) main
+   B) private static void main(String[] args) {
+   C) public static void main(String[] args) {
+   V) public void main(String[] args) {
+   drugo)
+2) ============================
+Sto e dodeluvanje t.e assigment ?
+   A) dodavanje na broj vo int
+   B) kreiranje memoriski prostor za promenliva
+   C) sporedba na dva broevi
+   V) dodeluvanje na vrednost vo promenliva
+   drugo)
+3) ============================
+  for (int i = 0; i < 10; i++) {
+   System.out.println(i);
+  }
+   A) ke gi ispise broevite od 0 do 10
+   B) ke gi ispise broevite od 0 do 9 vo posebna linija
+   C) ke gi ispise broevite od 0 do 10 vo ista linija
+   V) ke gi ispise od 0 do 9 vo edna linija bez prazno mesto megu niv
+   drugo)
+4) ============================
+Sto ke isprinta ovaj kod
+  for (int i = 1; i < 4; i++) {
+   System.out.print("A");
+  }
+  
+   A) A
+   B) AA
+   C) AAA
+   V) AAA
+   drugo)
+5) ============================
+Sto pecati slednata programa
+  int broj = 10;
+  if(broj > 11){
+   System.out.print("123");
+  }else{
+   System.out.print("456");
+  }
+  System.out.print(789);
+   A) 456789
+   B) 123456789
+   C) "456"789
+   V) 456"789"
+   drugo)
+6) ============================
+  char bukva = 'o';
+  if(bukva > 'a'){
+   System.out.print("funny");
+  }else{
+   System.out.print("not funny");
+  }
+   A) funny
+   B) not funny
+   C) funnynot funny
+   V) not
+   drugo)
+7) ============================
+  for (int i = 5; i < 4; i++) {
+   System.out.print("A");
+  }
+   A) A
+   B) AA
+   C) AAA
+   V) AAAA
+   drugo)
+8) ============================
+  for (int i = 1; i < 4; i=+10) {
+   System.out.print("A");
+  }
+   A) A
+   B) AA
+   C) AAA
+   V) AAAA
+   drugo)
+9) ============================
+  for (int i = 10; i >= 4; i--) {
+   System.out.print("A");
+  }
+   A) AAAAA
+   B) AAAAAA
+   C) AAAAAAA
+   V) AAAA
+   drugo)
+10) ============================
+  for (int i = 0; i < 10; i++) {
+   for (int j = 0; j < 10; j++) {
+    System.out.print(""+i+j+" ");
+   }
+  }
+   A) 1
+   B) 01
+   C) ji
+   V) ij
+   drugo)
+11) ============================
+  int i = 5;
+  if (i > 10) {
+   i = 4;
+  }
+  if (i > 3) {
+   i = 10;
+  }
+  if(i*2>4){
+   i=0;
+  }
+  System.out.print(i);
+   A) 0
+   B) 1
+   C) 4
+   V) 10
+   drugo)
+12) ============================
+  int i = 5;
+  if (i > 10) {
+   i = 4;
+  }
+  if (i < 3) {
+   i = 10;
+  }
+  if(i*2<4){
+   i=0;
+  }
+  System.out.print("rezultat: "+i);
+   A) rezultat: 0
+   B) rezultat: 3
+   C) rezultat: 5
+   V) rezultat: 10
+   drugo)
+13) ============================
+  int[] niza = new int[0];
+  System.out.print(niza[1]);
+   A) 0
+   B) 1
+   C) 10
+   V) 0 0 0 0 0 0 0 0 0 0
+   drugo)
+14) ============================
+  int[] niza = new int[10];
+  System.out.print(niza[1]);
+   A) 0
+   B) 1
+   C) 10
+   V) 0 0 0 0 0 0 0 0 0 0
+   drugo)
+15) ============================
+  int[] niza = new int[10];
+  for (int i = 0; i < 10; i++) {
+   System.out.print(niza[1]);
+  }
+   A) 0000000000
+   B) 0
+   C) 0 0 0 0 0 0 0 0 0 0 vo nov red
+   V) 0 0 0 0 0 0 0 0 0 0
+   drugo)
+16) ============================
+  int[] niza = new int[10];
+  for (int i = 0; i < 10; i++) {
+   if(i%2==0){
+    System.out.print(niza[1]);
+   }
+  }
+   A) 00000
+   B) 0000000000
+   C) 1
+   V) 2
+   drugo)
+17) ============================
+  int[] niza = new int[10];
+  for (int i = 0; i < 10; i++) {
+   niza[i]=i;
+   if(i%2==0){
+    System.out.print(niza[1]);
+   }
+  }
+   A) 01111
+   B) 01234
+   C) 0246802468
+   V) 02468
+   drugo)
+18) ============================
+  int[] niza = new int[10];
+  for (int i = 0; i < 10; i++) {
+   niza[i]=i;
+   if(i%2==0){
+    System.out.print(niza[i]);
+   }
+  }
+   A) 01111
+   B) 01234
+   C) 0246802468
+   V) 02468
+   drugo)
+   A)
+   B)
+   C)
+   V)
+   drugo)
+19) ============================
+  int[] niza = new int[10];
+  for (int i = 0; i < 10; i++) {
+   niza[i]=i;
+   if(i%2==0){
+    System.out.print(niza[i]);
+   }
+   System.out.print("A");
+  }
+   A) 01111
+   B) 0AA2AA4AA6AA8AA9AA
+   C) 0AA2AA4AA6AA8AA
+   V) 0A2A4A6A8A
+   drugo)
+20) ============================
+  int[][] matrica = new int[4][4];
+  for (int i = 0; i < 4; i++) {
+   for (int j = 0; j < 4; j++) {
+    if (i == j) {
+     matrica[j][i] = 1;
+    }
+   }
+  }
+  
+  for (int i = 0; i < 4; i++) {
+   for (int j = 0; j < 4; j++) {
+    System.out.print(matrica[j][i]+" ");
+   }
+   System.out.println("");
+  }
+   A)
+0 0 0 1
+0 0 1 0
+0 1 0 0
+1 0 0 0
+   B)
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+   C)
+0 1 1 1
+1 0 1 1
+1 1 0 1
+1 1 1 0
+   V)
+1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1
+   drugo)
+21) ============================
+  int[][] matrica = new int[4][4];
+  for (int i = 0; i < 4; i++) {
+   matrica[1][i] = i;
+   for (int j = 0; j < 4; j++) {
+    if (i == j) {
+     matrica[j][i] = j;
+    }
+   }
+  }
+  
+  for (int i = 0; i < 4; i++) {
+   for (int j = 0; j < 4; j++) {
+    System.out.print(matrica[j][i]+" ");
+   }
+   System.out.println("");
+  }
+   A)
+0 0 0 0
+0 1 0 0
+0 2 2 0
+0 3 0 3
+
+no zosto ? razgledaj ubavo
+22) ============================
+dokolku sakame System.out.println(zbir(1,1)); da ispecati 2 togas
+   A)
+ public static void zbir(int a, int b){
+  return a+b;
+ }
+   B)
+ public static int zbir(int a, int b){
+  return a+b+1;
+ }
+   C)
+ public static int zbir(int a, int b){
+  int zbir=a+b;
+ }
+   V)
+ public static int zbir(int a, int b){
+  return zbir;
+ }
+   drugo)
+23) ============================
+ public static int sum(int a){
+  int sum=0;
+  for(int i=0;i<a;i++){
+   sum = sum + i;
+  }
+  return sum;
+ }
+
+pri povik
+sum(3);
+kakov r rezultatot
+   A) 0
+   B) 1
+   C) 3
+   V) 6
+   drugo)
+24) ============================
+ public static int sum(int a){
+  int sum=0;
+  for(int i=0;i<=a;i++){
+   sum = sum + i;
+  }
+  return sum;
+ }
+
+pri povik
+sum(3);
+kakov r rezultatot
+   A) 0
+   B) 1
+   C) 3
+   V) 5
+   drugo)
+25) ============================
+ public static int sum(int a){
+  int sum=0;
+  for(int i=0;i>=a;i++){
+   sum = sum + i;
+  }
+  return sum;
+ }
+
+pri povik
+sum(3);
+kakov r rezultatot
+   A) 0
+   B) 1
+   C) 3
+   V) 5
+   drugo)
+26) ============================
+ public static void ispecati(int[] n){
+  for(int i=0;i<n.length;i++){
+   System.out.print(""+n[i]);
+  }
+ }
+   A) 000
+   B) 123
+   C) 012
+   V) 111
+   drugo)
+27) ============================
+  int[] niza = new int[4];
+  niza[0]=3;
+  niza[1]=5;
+  niza[3]=7;
+  ispecati(niza);
+
+ public static void ispecati(int[] n){
+  for(int i=0;i<n.length;i++){
+   System.out.print(""+n[i]);
+  }
+ }
+   A) 3507
+   B) 1234
+   C) 2570
+   V) 0000
+   drugo)
+28) ============================
+  int[] niza = {3,5,7,8}
+  ispecati(niza);
+
+ public static void ispecati(int[] n){
+  for(int i=0;i<n.length;i++){
+   System.out.print(""+n[i]);
+  }
+ }
+   A) 3507
+   B) 1234
+   C) 2570
+   V) 0000
+   drugo)
+29) ============================
+
+ public static int[] pomnozi(int[] nizaZaMnozenje,int mnozitel){
+  for(int i=0;i<nizaZaMnozenje.length;i++){
+   nizaZaMnozenje[i] = nizaZaMnozenje[i]*mnozitel;
+  }
+  return nizaZaMnozenje;
+ }
+
+  int[] niza = new int[4];
+  niza[0]=1;
+  niza[1]=2;
+  niza[2]=3;
+  niza[3]=4;
+  int[] novaNiza = pomnozi(niza,2);
+  
+  for(int i=0;i<novaNiza.length;i++){
+   System.out.print(novaNiza[i]+" ");
+  }
+   A) 1 2 2 4
+   B) 8 6 4 2
+   C) 1 2 3 4
+   V) 2 4 6 8
+   drugo)
+30) ============================
+  int[] niza = new int[4];
+  niza[0]=1;
+  niza[1]=2;
+  niza[2]=3;
+  niza[3]=4;
+  int[] novaNiza = pomnozi(niza,3);
+  
+  for(int i=0;i<novaNiza.length;i++){
+   System.out.print(novaNiza[i]);
+  }
+
+ public static int[] pomnozi(int[] nizaZaMnozenje,int mnozitel){
+  for(int i=0;i<nizaZaMnozenje.length;i++){
+   nizaZaMnozenje[i] = nizaZaMnozenje[i]*mnozitel;
+  }
+  return nizaZaMnozenje;
+ }
+36912 no zosto ? 

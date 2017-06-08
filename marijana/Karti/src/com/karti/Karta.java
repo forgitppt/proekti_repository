@@ -1,8 +1,10 @@
 package com.karti;
 
-import javax.management.RuntimeErrorException;
-
+//public class Karta extends Object {
 public class Karta {
+
+	// vo ovaa klasa this pokazuva na Karta
+	// super pokazuva na Object
 
 	// validni vrednosti za boja
 	public static final String KARO = "karo";
@@ -17,12 +19,24 @@ public class Karta {
 	public static final String QUEEN = "Q";
 	public static final String KING = "K";
 
+	public static String[] SITE_BOI = new String[] { KARO, SRCE, TREF, PIK };
+	public static String[] SITE_BROJKI = new String[] { ACE, "2", "3", "4", "5", "6", "7", "8", "9", "10", JACK, QUEEN,
+			KING };
+
 	private String brojka;
 	private String boja;
+
+	public Karta() {
+
+	}
 
 	public Karta(String brojka, String boja) {
 		setBoja(boja);
 		setBrojka(brojka);
+	}
+
+	public String getBoja() {
+		return boja;
 	}
 
 	public void setBoja(String boja) {
@@ -30,8 +44,7 @@ public class Karta {
 			this.boja = boja;
 			return;
 		}
-		
-		throw new RuntimeException("Nevalidna vrednost za boja: " +boja);
+		throw new RuntimeException("Nevalidna vrednost za boja: " + boja);
 	}
 
 	public void setBrojka(String brojka) {
@@ -46,17 +59,17 @@ public class Karta {
 			}
 		} catch (Exception e) {
 		}
-		//proverka za bukvite
+		// proverka za bukvite
 		if (brojka.equals(ACE) || brojka.equals(KING) || brojka.equals(QUEEN) || brojka.equals(JACK)) {
 			this.brojka = brojka;
 			return;
 		}
-		
-		throw new RuntimeException("Nevalidna vrednost za brojka: " +brojka);
+
+		throw new RuntimeException("Nevalidna vrednost za brojka: " + brojka);
 	}
 
 	@Override
 	public String toString() {
-		return brojka + " " + boja;
+		return brojka + " : " + boja;
 	}
 }
