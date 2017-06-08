@@ -67,35 +67,30 @@ public class Main {
 //		System.out.println(spil);
 
 
-		Spil spil = new Spil();
-		
-		//sozdadi spil od 54 karti
-		for (int i = 0; i < Karta.SITE_BOI.length; i++) {
-			String momentalnaBoja = Karta.SITE_BOI[i];
-			for (int j = 0; j < Karta.SITE_BROJKI.length; j++) {
-				String momentalnaBrojka = Karta.SITE_BROJKI[j];
-				
-				Karta k = new Karta(momentalnaBrojka, momentalnaBoja);
-				spil.dodadiKarta(k);
-			}
-		}
-		
-		Joker j1 = new Joker();
-		Joker j2 = new Joker();
-		
-		spil.dodadiKarta(j1);
-		spil.dodadiKarta(j2);
-		
-		System.out.println(spil);
+//		Spil spil = Spil.napraviSpilOd54Karti();
+//		System.out.println(spil);
 		//System.out.println("43 pred " +spil.karti.get(43));
 		
-		spil.izmesaj();
-		System.out.println("izmesan" +spil);
+//		spil.izmesaj();
+//		System.out.println("izmesan" +spil);
 		//System.out.println("43 po " +spil.karti.get(43));
 		
 //		Igrac i = new Igrac("Petko");
 //		Igrac i2 = new Igrac();
 //		System.out.println(i2);
+		
+		
+		//---------------day 7
+		
+		Spil spil = Spil.napraviPrivremenMalSpilZaTestiranje();
+		spil.izmesaj();
+		System.out.println(spil);
+		
+		Igrac igrac1 = new Igrac("Mandarina");
+		Igrac igrac2 = new Igrac("Dinja");
+		Igrac igrac3 = new Igrac("Banana");
+		
+		
 	}
 
 	public static void print(String s) {

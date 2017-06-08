@@ -1,4 +1,4 @@
-пон, 22 мај 17:45:36 CEST 2017
+﻿пон, 22 мај 17:45:36 CEST 2017
  
 
 Proveruvajte oglasna tabla (oglasnaTabla.txt)
@@ -12,12 +12,13 @@ Proveruvajte oglasna tabla (oglasnaTabla.txt)
 
 *******************************************************************************
 
+cas 8 ke se odrzina 13ti
+cas 9 ke se odrzina 15ti
+	na 20ti i 22ri nema da ima cas
+cas 10 ke se odrzina 27ti
+cas 11 ke se odrzina 29ti
 
-se gledame vo ponedelnik na 5ti juni
-	povtorete go materijalot 
-	i napravete git push
-
-nemojte da zaboravite da napravite push !!!
+plus ke ima dopolnitelen cas za koj nahnadno ke se dogovorime
 *******************************************************************************
 
 Vo odnos na rasporedot i casovite:

@@ -42,4 +42,40 @@ public class Spil {
 			
 		}
 	}
+	
+	public static Spil napraviSpilOd54Karti(){
+		Spil spil = new Spil();
+		
+		//sozdadi spil od 54 karti
+		for (int i = 0; i < Karta.SITE_BOI.length; i++) {
+			String momentalnaBoja = Karta.SITE_BOI[i];
+			for (int j = 0; j < Karta.SITE_BROJKI.length; j++) {
+				String momentalnaBrojka = Karta.SITE_BROJKI[j];
+				
+				Karta k = new Karta(momentalnaBrojka, momentalnaBoja);
+				spil.dodadiKarta(k);
+			}
+		}
+		
+		Joker j1 = new Joker();
+		Joker j2 = new Joker();
+		
+		spil.dodadiKarta(j1);
+		spil.dodadiKarta(j2);
+		
+		return spil;
+	}
+	
+	public static Spil napraviPrivremenMalSpilZaTestiranje(){
+		Spil spil = new Spil();
+
+			String momentalnaBoja = Karta.SRCE;
+			for (int j = 0; j < 7; j++) {
+				String momentalnaBrojka = Karta.SITE_BROJKI[j];
+				Karta k = new Karta(momentalnaBrojka, momentalnaBoja);
+				spil.dodadiKarta(k);
+			}
+		
+		return spil;
+	}
 }
