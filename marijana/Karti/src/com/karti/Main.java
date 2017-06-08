@@ -1,5 +1,7 @@
 package com.karti;
 
+import java.util.ArrayList;
+
 import com.karti.zaoop.Pivo;
 import com.karti.zaoop.Toceno;
 
@@ -89,8 +91,33 @@ public class Main {
 		Igrac igrac1 = new Igrac("Mandarina");
 		Igrac igrac2 = new Igrac("Dinja");
 		Igrac igrac3 = new Igrac("Banana");
+		Igrac igrac4 = new Igrac("Kivi");
 		
+		ArrayList<Igrac> listaNaIgraci = new ArrayList<>();
+		listaNaIgraci.add(igrac1);
+		listaNaIgraci.add(igrac2);
+		listaNaIgraci.add(igrac3);
+		listaNaIgraci.add(igrac4);
 		
+		boolean daliImaUsteKarti = true;
+		while(daliImaUsteKarti){
+			
+			for (int i = 0; i < listaNaIgraci.size(); i++) {
+				Karta izvlecenaKarta = spil.izvleciKarta();
+				if(izvlecenaKarta != null){
+					listaNaIgraci.get(i).kartiNaIgracot.add(izvlecenaKarta);
+				}else{
+					daliImaUsteKarti = false;
+					break;
+				}
+			}
+		}
+		
+		//
+		System.out.println(spil);
+		for (int i = 0; i < listaNaIgraci.size(); i++) {
+			System.out.println(listaNaIgraci.get(i));
+		}
 	}
 
 	public static void print(String s) {

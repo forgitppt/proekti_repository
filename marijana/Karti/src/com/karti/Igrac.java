@@ -36,6 +36,13 @@ public class Igrac {
 	
 	@Override
 	public String toString() {
-		return ime;
+		String s = ime + " ( ";
+		for (int i = 0; i < kartiNaIgracot.size(); i++) {
+			s = s + " " + kartiNaIgracot.get(i) + ", ";
+		}
+		s = s + " )";
+		return s;
 	}
+	
+
 }
