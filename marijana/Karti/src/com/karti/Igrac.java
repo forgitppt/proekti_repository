@@ -103,7 +103,11 @@ public class Igrac {
 
 			if (najgornataOtvorenaKarta.getBrojka().equals(Karta.KING)) {
 				if (karta.getBrojka().equals(Karta.ACE)) {
-					return true;
+					if (najgornataOtvorenaKarta.getBoja().equals(karta.getBoja())) {
+						return true;
+					}else{
+						return false;
+					}
 				} else {
 					return false;
 				}

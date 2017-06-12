@@ -82,7 +82,7 @@ public class NaredenSpilKartiVoSredina {
 	
 	//todo ovaa metoda treba da se prefrli vo nekoja pomosna klasa (UtilClass)
 	public static int zemiRedosled(String brojkaOdKarta){
-		for (int i = 0; i < Karta.SITE_BROJKI.length-1; i++) {
+		for (int i = 0; i < Karta.SITE_BROJKI.length; i++) {
 			if(brojkaOdKarta.equals(Karta.SITE_BROJKI[i])){
 				return i;
 			}
