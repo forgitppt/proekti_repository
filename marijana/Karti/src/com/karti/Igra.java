@@ -20,6 +20,8 @@ public class Igra {
 		Date d = new Date();
 		System.out.println("Igrata zapocnuva vo " + d.toString());
 
+		dodeliKartiNaIgracite();
+		
 		// najprvin treba da se odluci koj igrac ke bide prv
 		// dodeka trae igrata igracite treba da se vrtat vo krug
 		int indeksNaIgracotKojENaRed = -1;// todo napravi prv da e nekoj random
@@ -36,6 +38,13 @@ public class Igra {
 			boolean daliUspeaDaDodeliKartaNekomu = false; // seuste ne sme
 															// dodelile nikomu
 															// karta
+
+			// pred da vidime dali igracite mozat da dodelat karta nekomu
+			// treba da gi izvlecime site karti od spilot
+
+			if (spil.kartiteVoSpilot.size() > 0) {
+
+			}
 
 			// proveri dali ima otvorena karta
 			if (igracNaPoteg.iscitajJaNajgornataOtvorenaKarta() != null) {
@@ -140,15 +149,23 @@ public class Igra {
 					}
 				} else {
 					// igracot nema zatvoreni karti
-					
-					//proveri dali voopsto ima otvoreni
-					if(igracNaPoteg.otvoreniKartiNaIgracot.size()>0){
-						//ima otvoreni, zavrti gi
-					}else{
-						//igracot nema ni otvoreni ni zatvoreni karti
-						//todo
-						//dali e pobednik ?
-						//dali igrata ke zavrsi ili ke prodolzat drugite igraci ?
+
+					// proveri dali voopsto ima otvoreni
+					if (igracNaPoteg.otvoreniKartiNaIgracot.size() > 0) {
+						// ima otvoreni, zavrti gi
+						igracNaPoteg.prevrtigiOtvoreniteKartiVoZatvoreni();
+
+						// gi svrtevme kartite, sledno sakam pak ovaj igrac da e
+						// na red
+						// za da mu se dade sansa da napravi nekakov poteg
+						indeksNaIgracotKojENaRed--;
+						continue;
+					} else {
+						// igracot nema ni otvoreni ni zatvoreni karti
+						// todo
+						// dali e pobednik ?
+						// dali igrata ke zavrsi ili ke prodolzat drugite igraci
+						// ?
 					}
 				}
 			}
@@ -162,6 +179,20 @@ public class Igra {
 		if (redenSpil.daliENareden()) {
 			return true;
 		}
-		return true;
+		return false;
+	}
+
+	public void dodeliKartiNaIgracite() {
+		int momentalenIgracNaKojMuSeDodeluvaKarta = -1;
+		for (int i = 0; i < spil.kartiteVoSpilot.size(); i++) {
+			momentalenIgracNaKojMuSeDodeluvaKarta++;
+			if (momentalenIgracNaKojMuSeDodeluvaKarta >= igraciVoIgrata.size()) {
+				momentalenIgracNaKojMuSeDodeluvaKarta = 0;
+			}
+			
+			igraciVoIgrata.get(momentalenIgracNaKojMuSeDodeluvaKarta).
+				dodeliKartaNaIgracotVoZatvorenite(spil.kartiteVoSpilot.get(i));
+		}
+
 	}
 }

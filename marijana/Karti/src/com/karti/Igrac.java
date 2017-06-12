@@ -26,11 +26,11 @@ public class Igrac {
 
 	//dodeli karta na igracot vo zatvorenite karti
 	//se misli koga od glavniot spil se dodeluva karta na igracot
-	public void dedeliKartaNaIgracotVoZatvorenite(Karta k) {
+	public void dodeliKartaNaIgracotVoZatvorenite(Karta k) {
 		zatvoreniKartiNaIgracot.add(k);
 	}
 
-	public void dedeliKartaNaIgracotVoOtverenite(Karta k) {
+	public void dodeliKartaNaIgracotVoOtverenite(Karta k) {
 		otvoreniKartiNaIgracot.add(k);
 	}
 	
@@ -56,7 +56,7 @@ public class Igrac {
 		if (zatvoreniKartiNaIgracot.size() < 1) {
 			return null;// todo
 		}
-		return otvoreniKartiNaIgracot.get(zatvoreniKartiNaIgracot.size() - 1);
+		return zatvoreniKartiNaIgracot.get(zatvoreniKartiNaIgracot.size() - 1);
 	}
 	
 	public Karta izbrisiJaNajgornataZatvorenaKarta() {
@@ -125,12 +125,7 @@ public class Igrac {
 	// metoda za dodavanje na karta, ova ke ja dodade najgore
 	//t.e ovaa ke bidi kartata sto ke se gleda
 	public void dodadiVoOtvoreniKartiNaIgracot(Karta karta) {
-		// dodavame samo ako ni dozvoli validacijata
-		if (daliMozeDaSeDodadeKartataNaIgracot(karta)) {
 			otvoreniKartiNaIgracot.add(karta);
-		}
-
-		// ako nemoze togas mozebi treba da se frli greska ?
 	}
 	
 	public void prevrtigiOtvoreniteKartiVoZatvoreni(){

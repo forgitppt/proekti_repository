@@ -13,7 +13,7 @@ public class Main {
 		//na primer mora da ima 1 spil, i barem 2 igraci
 		
 		//za da e validna igrata mora da imame 1 spil
-		Spil spil = Spil.napraviPrivremenMalSpilZaTestiranje();
+		Spil spil = Spil.napraviSpilOd52Karti();
 		
 		//2 igraci
 		Igrac igrac1 = new Igrac("Igrac 1");
@@ -28,6 +28,8 @@ public class Main {
 		//napravi objekt igra i zapocnija igrata
 		Igra igra = new Igra(spil, redenSpil, igraci);
 		igra.zapocnijaIgrata();
+		
+		System.out.println(redenSpil);
 	}
 
 
