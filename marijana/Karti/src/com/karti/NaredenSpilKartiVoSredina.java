@@ -53,7 +53,8 @@ public class NaredenSpilKartiVoSredina {
 		return false;
 	}
 
-	// metoda za dodavanje
+	// metoda za dodavanje na karta vo sredina, ova ke ja dodade najgore
+	//t.e ovaa ke bidi kartata sto ke se gleda
 	public void dodadiKartaVoSredina(Karta karta) {
 		// dodavame samo ako ni dozvoli validacijata
 		if (daliMozeDaSeDodadeKartataVoSredina(karta)) {
@@ -80,5 +81,12 @@ public class NaredenSpilKartiVoSredina {
 			}
 		}
 		return -1;//nesto se sjeba
+	}
+
+	public boolean daliENareden() {
+		//todo podobra proverka dali spilot e nareden
+		
+		//zasega za nareden spil ke go smetame onoj sto sodrzi 52 karti
+		return kartiteVoSredina.size() == 52;
 	}
 }
