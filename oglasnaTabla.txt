@@ -12,11 +12,11 @@ Proveruvajte oglasna tabla (oglasnaTabla.txt)
 
 *******************************************************************************
 
-cas 8 ke se odrzina 13ti
 cas 9 ke se odrzina 15ti
-	na 20ti i 22ri nema da ima cas
-cas 10 ke se odrzina 27ti
-cas 11 ke se odrzina 29ti
+	na 19ti i 22ri nema da ima cas
+	na 26ti isto taka nema da ima cas (praznik e)
+cas 10 ke se odrzina 29ti
+cas 11 ke se odrzina 3ti
 
 plus ke ima dopolnitelen cas za koj nahnadno ke se dogovorime
 *******************************************************************************
