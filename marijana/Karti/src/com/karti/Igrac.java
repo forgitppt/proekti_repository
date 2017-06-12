@@ -24,10 +24,16 @@ public class Igrac {
 		otvoreniKartiNaIgracot = new ArrayList<>();
 	}
 
-	public void dedeliKartaNaIgracot(Karta k) {
+	//dodeli karta na igracot vo zatvorenite karti
+	//se misli koga od glavniot spil se dodeluva karta na igracot
+	public void dedeliKartaNaIgracotVoZatvorenite(Karta k) {
 		zatvoreniKartiNaIgracot.add(k);
 	}
 
+	public void dedeliKartaNaIgracotVoOtverenite(Karta k) {
+		otvoreniKartiNaIgracot.add(k);
+	}
+	
 	// ova samo ke ja procita nema da ja izbrisi od spilot
 	public Karta iscitajJaNajgornataOtvorenaKarta() {
 		if (otvoreniKartiNaIgracot.size() < 1) {
@@ -46,17 +52,14 @@ public class Igrac {
 		return k;
 	}
 
-	// ova e koga sakame da ja frlime najgornata otvorena karta na igracot
-	public Karta firliPrvataOtvorenaKarta() {
-		if (zatvoreniKartiNaIgracot.size() == 0) {
-			return null;// ili ke frlime greska
+	public Karta iscitajJaNajgornataZatvorenaKarta() {
+		if (zatvoreniKartiNaIgracot.size() < 1) {
+			return null;// todo
 		}
-		Karta najgornata = zatvoreniKartiNaIgracot.get(zatvoreniKartiNaIgracot.size() - 1);
-		zatvoreniKartiNaIgracot.remove(zatvoreniKartiNaIgracot.size() - 1);
-		return najgornata;
+		return otvoreniKartiNaIgracot.get(zatvoreniKartiNaIgracot.size() - 1);
 	}
-
-	public Karta firliPrvataZatvorenaKarta() {
+	
+	public Karta izbrisiJaNajgornataZatvorenaKarta() {
 		if (zatvoreniKartiNaIgracot.size() == 0) {
 			return null;// ili ke frlime greska
 		}
@@ -121,12 +124,20 @@ public class Igrac {
 	
 	// metoda za dodavanje na karta, ova ke ja dodade najgore
 	//t.e ovaa ke bidi kartata sto ke se gleda
-	public void dodadiNaIgracot(Karta karta) {
+	public void dodadiVoOtvoreniKartiNaIgracot(Karta karta) {
 		// dodavame samo ako ni dozvoli validacijata
 		if (daliMozeDaSeDodadeKartataNaIgracot(karta)) {
 			otvoreniKartiNaIgracot.add(karta);
 		}
 
 		// ako nemoze togas mozebi treba da se frli greska ?
+	}
+	
+	public void prevrtigiOtvoreniteKartiVoZatvoreni(){
+		zatvoreniKartiNaIgracot = new ArrayList<>();
+		for (int i = 0; i < otvoreniKartiNaIgracot.size(); i++) {
+			zatvoreniKartiNaIgracot.add(otvoreniKartiNaIgracot.get(i));
+		}
+		otvoreniKartiNaIgracot = new ArrayList<>();
 	}
 }

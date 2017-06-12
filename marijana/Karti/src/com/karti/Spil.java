@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class Spil {
 
-	int[] nizaOdBrojki;
+	//int[] nizaOdBrojki;
 	ArrayList<Karta> kartiteVoSpilot;
 
 	public Spil() {
@@ -74,6 +74,8 @@ public class Spil {
 		return spil;
 	}
 	
+	//ovaa metoda posle razvojot na aplikacijata moze da se izbrise
+	//pomaga samo za testiranje
 	public static Spil napraviPrivremenMalSpilZaTestiranje(){
 		Spil spil = new Spil();
 

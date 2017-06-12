@@ -71,7 +71,7 @@ public class Igra {
 						if (igraciVoIgrata.get(i).daliMozeDaSeDodadeKartataNaIgracot(najgornataOtvorenaKarta)) {
 							// smee da ja dade svojata najgorna karta vo
 							// otvorenite na drug igrac
-							igraciVoIgrata.get(i).dodadiNaIgracot(najgornataOtvorenaKarta);
+							igraciVoIgrata.get(i).dodadiVoOtvoreniKartiNaIgracot(najgornataOtvorenaKarta);
 							igracNaPoteg.izbrisiJaNajgornataOtvorenaKarta();
 							daliUspeaDaDodeliKartaNekomu = true;
 							break;
@@ -86,12 +86,71 @@ public class Igra {
 			} else {
 				// igracot nema otvoreni karti
 			}
-			
-			if(daliUspeaDaDodeliKartaNekomu){
+
+			if (daliUspeaDaDodeliKartaNekomu) {
 				continue;
-			}else{
-				//igracot ne napravil nisto so svoite otvoreni karti
-				//da proverime sto moze da napravi so zatvorenite
+			} else {
+				// igracot ne napravil nisto so svoite otvoreni karti
+				// da proverime sto moze da napravi so zatvorenite
+
+				if (igracNaPoteg.iscitajJaNajgornataZatvorenaKarta() != null) {
+					// ima seuste zatvoreni karti
+					Karta najgornataZatvorena = igracNaPoteg.iscitajJaNajgornataZatvorenaKarta();
+
+					if (redenSpil.daliMozeDaSeDodadeKartataVoSredina(najgornataZatvorena)) {
+						// dokolku moze dodadija
+						redenSpil.dodadiKartaVoSredina(najgornataZatvorena);
+						// izbrisija istata od kaj igracot
+						igracNaPoteg.izbrisiJaNajgornataZatvorenaKarta();
+						daliUspeaDaDodeliKartaNekomu = true;
+						continue;
+					} else {
+						// nemoze da se dodade vo sredina
+
+						for (int i = 0; i < igraciVoIgrata.size(); i++) {
+							if (i == indeksNaIgracotKojENaRed) {
+								// sam na sebe nemoze da si dodeli karta
+								continue;
+							}
+
+							if (igraciVoIgrata.get(i).daliMozeDaSeDodadeKartataNaIgracot(najgornataZatvorena)) {
+								// smee da ja dade svojata najgorna karta vo
+								// otvorenite na drug igrac
+								igraciVoIgrata.get(i).dodadiVoOtvoreniKartiNaIgracot(najgornataZatvorena);
+								igracNaPoteg.izbrisiJaNajgornataZatvorenaKarta();
+								daliUspeaDaDodeliKartaNekomu = true;
+								break;
+							}
+						}
+						if (daliUspeaDaDodeliKartaNekomu) {
+							// uspeal da napravi poteg, t.e dodelil karta, sega
+							// e
+							// nekoj sleden igrac na red
+							continue;
+						} else {
+							// ako ne uspeal da ja dodeli kartata vo sredina
+							// i neuspeal da ja dodeli kartata na nikoj od
+							// igracite
+							/// togas dodelija kaj sebe
+							igracNaPoteg.dodadiVoOtvoreniKartiNaIgracot(najgornataZatvorena);
+							igracNaPoteg.izbrisiJaNajgornataZatvorenaKarta();
+							daliUspeaDaDodeliKartaNekomu = true;
+						}
+
+					}
+				} else {
+					// igracot nema zatvoreni karti
+					
+					//proveri dali voopsto ima otvoreni
+					if(igracNaPoteg.otvoreniKartiNaIgracot.size()>0){
+						//ima otvoreni, zavrti gi
+					}else{
+						//igracot nema ni otvoreni ni zatvoreni karti
+						//todo
+						//dali e pobednik ?
+						//dali igrata ke zavrsi ili ke prodolzat drugite igraci ?
+					}
+				}
 			}
 		}
 
