@@ -30,6 +30,13 @@ public class Igra {
 		// igrata trae se dodeka ne zavrsi :)
 		// odlukata dali igrata e zavrsena ja pravime vo posebna metoda
 		while (!daliEKrajNaIgrata()) {
+			
+			System.out.println(spil.kartiteVoSpilot.size());
+			System.out.println(igraciVoIgrata.get(0) +"\n");
+			System.out.println(igraciVoIgrata.get(1));
+			System.out.println(redenSpil);
+			
+			
 			indeksNaIgracotKojENaRed++;
 			if (indeksNaIgracotKojENaRed >= igraciVoIgrata.size()) {
 				indeksNaIgracotKojENaRed = 0;
@@ -38,13 +45,6 @@ public class Igra {
 			boolean daliUspeaDaDodeliKartaNekomu = false; // seuste ne sme
 															// dodelile nikomu
 															// karta
-
-			// pred da vidime dali igracite mozat da dodelat karta nekomu
-			// treba da gi izvlecime site karti od spilot
-
-			if (spil.kartiteVoSpilot.size() > 0) {
-
-			}
 
 			// proveri dali ima otvorena karta
 			if (igracNaPoteg.iscitajJaNajgornataOtvorenaKarta() != null) {
@@ -193,6 +193,8 @@ public class Igra {
 			igraciVoIgrata.get(momentalenIgracNaKojMuSeDodeluvaKarta).
 				dodeliKartaNaIgracotVoZatvorenite(spil.kartiteVoSpilot.get(i));
 		}
+		
+		spil.isprazniSpil();
 
 	}
 }

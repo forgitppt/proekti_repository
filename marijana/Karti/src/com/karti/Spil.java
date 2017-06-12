@@ -26,6 +26,10 @@ public class Spil {
 		kartiteVoSpilot.remove(kartiteVoSpilot.size()-1);
 		return najgornata;
 	}
+	
+	public void isprazniSpil(){
+		kartiteVoSpilot.clear();
+	}
 
 	@Override
 	public String toString() {

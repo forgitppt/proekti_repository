@@ -32,8 +32,14 @@ public class NaredenSpilKartiVoSredina {
 					return true;
 				} else {
 					return false;
-				}
+				}	
 			} else {
+				if(karta.getBrojka().equals("2")){
+					int a = 0;
+					if(1<10){
+						String s = "fdsfds"+1;
+					}
+				}
 				//sto ako e bilo sto osven KING
 				if(poslednataNaSredina.getBoja().equals(karta.getBoja())){
 					//mozebi smeeme da dodademe

@@ -63,8 +63,8 @@ public class Igrac {
 		if (zatvoreniKartiNaIgracot.size() == 0) {
 			return null;// ili ke frlime greska
 		}
-		Karta najgornata = zatvoreniKartiNaIgracot.get(0);
-		zatvoreniKartiNaIgracot.remove(0);
+		Karta najgornata = zatvoreniKartiNaIgracot.get(zatvoreniKartiNaIgracot.size()-1);
+		zatvoreniKartiNaIgracot.remove(zatvoreniKartiNaIgracot.size()-1);
 		return najgornata;
 	}
 
@@ -74,9 +74,13 @@ public class Igrac {
 
 	@Override
 	public String toString() {
-		String s = ime + " ( ";
+		String s = ime + " ( 	zatvoreni:";
 		for (int i = 0; i < zatvoreniKartiNaIgracot.size(); i++) {
 			s = s + " " + zatvoreniKartiNaIgracot.get(i) + ", ";
+		}
+		s=s+"\n		otvoreni:";
+		for (int i = 0; i < otvoreniKartiNaIgracot.size(); i++) {
+			s = s + " " + otvoreniKartiNaIgracot.get(i) + ", ";
 		}
 		s = s + " )";
 		return s;
