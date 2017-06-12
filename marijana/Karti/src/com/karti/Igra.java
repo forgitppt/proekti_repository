@@ -27,7 +27,7 @@ public class Igra {
 
 		// igrata trae se dodeka ne zavrsi :)
 		// odlukata dali igrata e zavrsena ja pravime vo posebna metoda
-		while (daliEKrajNaIgrata()) {
+		while (!daliEKrajNaIgrata()) {
 			indeksNaIgracotKojENaRed++;
 			if (indeksNaIgracotKojENaRed >= igraciVoIgrata.size()) {
 				indeksNaIgracotKojENaRed = 0;
@@ -58,6 +58,15 @@ public class Igra {
 					//proveri dali mozeme da dodelime na drugite igraci
 					
 					for (int i = 0; i < igraciVoIgrata.size(); i++) {
+						if(i == indeksNaIgracotKojENaRed){
+							//sam na sebe nemoze da si dodeli karta
+							continue;
+						}
+						
+						if(igraciVoIgrata.get(i).daliMozeDaSeDodadeKartataNaIgracot(najgornataOtvorenaKarta)){
+							igraciVoIgrata.get(i).dodadiNaIgracot(najgornataOtvorenaKarta);
+							igracNaPoteg.izbrisiJaNajgornataOtvorenaKarta();
+						}
 						
 					}
 				}

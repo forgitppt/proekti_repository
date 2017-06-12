@@ -74,7 +74,7 @@ public class NaredenSpilKartiVoSredina {
 		return s;
 	}
 	
-	public int zemiRedosled(String brojkaOdKarta){
+	public static int zemiRedosled(String brojkaOdKarta){
 		for (int i = 0; i < Karta.SITE_BROJKI.length-1; i++) {
 			if(brojkaOdKarta.equals(Karta.SITE_BROJKI[i])){
 				return i;
