@@ -33,45 +33,65 @@ public class Igra {
 				indeksNaIgracotKojENaRed = 0;
 			}
 			Igrac igracNaPoteg = igraciVoIgrata.get(indeksNaIgracotKojENaRed);
-		
-			//proveri dali ima otvorena karta
-			if(igracNaPoteg.iscitajJaNajgornataOtvorenaKarta() != null){
-				//ima karta
-				
-				//napravi proverka dali mozes negde da ja stavis
-				//najprvin proveri dali moze da se stavi vo sredina
+			boolean daliUspeaDaDodeliKartaNekomu = false; // seuste ne sme
+															// dodelile nikomu
+															// karta
+
+			// proveri dali ima otvorena karta
+			if (igracNaPoteg.iscitajJaNajgornataOtvorenaKarta() != null) {
+				// ima karta
+
+				// napravi proverka dali mozes negde da ja stavis
+				// najprvin proveri dali moze da se stavi vo sredina
 				Karta najgornataOtvorenaKarta = igracNaPoteg.iscitajJaNajgornataOtvorenaKarta();
-				if(redenSpil.daliMozeDaSeDodadeKartataVoSredina(najgornataOtvorenaKarta)){
-					//dokolku moze dodadija 
+				if (redenSpil.daliMozeDaSeDodadeKartataVoSredina(najgornataOtvorenaKarta)) {
+					// dokolku moze dodadija
 					redenSpil.dodadiKartaVoSredina(najgornataOtvorenaKarta);
-					//izbrisija istata od kaj igracot
+					// izbrisija istata od kaj igracot
 					igracNaPoteg.izbrisiJaNajgornataOtvorenaKarta();
-					
-					//ovoj igrac napravi nekakov poteg pa sega veke ne e na red
-					//na red e sledniot igrac
+
+					// ovoj igrac napravi nekakov poteg pa sega veke ne e na red
+					// na red e sledniot igrac
+					daliUspeaDaDodeliKartaNekomu = true;
 					continue;
-				}else{
-					//igracot ima otvorena karta vo sredina no nemoze da ja stavi na sredina
-					//primer ima 4 PIK a na sredina e otvorena 10 SRCE
-					
-					//odkako svativme deka nemozime da dodademe vo sredina
-					//proveri dali mozeme da dodelime na drugite igraci
-					
+				} else {
+					// igracot ima otvorena karta vo sredina no nemoze da ja
+					// stavi na sredina
+					// primer ima 4 PIK a na sredina e otvorena 10 SRCE
+
+					// odkako svativme deka nemozime da dodademe vo sredina
+					// proveri dali mozeme da dodelime na drugite igraci
+
 					for (int i = 0; i < igraciVoIgrata.size(); i++) {
-						if(i == indeksNaIgracotKojENaRed){
-							//sam na sebe nemoze da si dodeli karta
+						if (i == indeksNaIgracotKojENaRed) {
+							// sam na sebe nemoze da si dodeli karta
 							continue;
 						}
-						
-						if(igraciVoIgrata.get(i).daliMozeDaSeDodadeKartataNaIgracot(najgornataOtvorenaKarta)){
+
+						if (igraciVoIgrata.get(i).daliMozeDaSeDodadeKartataNaIgracot(najgornataOtvorenaKarta)) {
+							// smee da ja dade svojata najgorna karta vo
+							// otvorenite na drug igrac
 							igraciVoIgrata.get(i).dodadiNaIgracot(najgornataOtvorenaKarta);
 							igracNaPoteg.izbrisiJaNajgornataOtvorenaKarta();
+							daliUspeaDaDodeliKartaNekomu = true;
+							break;
 						}
-						
+					}
+					if (daliUspeaDaDodeliKartaNekomu) {
+						// uspeal da napravi poteg, t.e dodelil karta, sega e
+						// nekoj sleden igrac na red
+						continue;
 					}
 				}
+			} else {
+				// igracot nema otvoreni karti
+			}
+			
+			if(daliUspeaDaDodeliKartaNekomu){
+				continue;
 			}else{
-				//igracot nema otvoreni karti
+				//igracot ne napravil nisto so svoite otvoreni karti
+				//da proverime sto moze da napravi so zatvorenite
 			}
 		}
 
