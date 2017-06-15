@@ -9,6 +9,8 @@ public class Igra {
 	NaredenSpilKartiVoSredina redenSpil;
 	ArrayList<Igrac> igraciVoIgrata;
 
+	ArrayList<Igrac> listaSoRezultati = new ArrayList<>();
+	
 	public Igra(Spil spil, NaredenSpilKartiVoSredina redenSpil, ArrayList<Igrac> igraciVoIgrata) {
 		super();
 		this.spil = spil;
@@ -31,16 +33,30 @@ public class Igra {
 		// odlukata dali igrata e zavrsena ja pravime vo posebna metoda
 		while (!daliEKrajNaIgrata()) {
 			
-			System.out.println(spil.kartiteVoSpilot.size());
-			System.out.println(igraciVoIgrata.get(0) +"\n");
-			System.out.println(igraciVoIgrata.get(1));
+			System.out.println("---------------------------------------------------");
+			ispecatiSostojbaNaIgraci();
 			System.out.println(redenSpil);
 			
+			//proveri dali ima pobednik
+			for (int i = 0; i < igraciVoIgrata.size(); i++) {
+				if(!igraciVoIgrata.get(i).daliESeusteVoIgra){
+					continue;
+				}
+				
+				if(!igraciVoIgrata.get(i).daliImaUsteKarti()){
+					//znaci veke nema karti
+					igraciVoIgrata.get(i).daliESeusteVoIgra = false;
+					listaSoRezultati.add(igraciVoIgrata.get(i));
+					igraciVoIgrata.remove(i);
+				}
+			}
 			
 			indeksNaIgracotKojENaRed++;
 			if (indeksNaIgracotKojENaRed >= igraciVoIgrata.size()) {
 				indeksNaIgracotKojENaRed = 0;
 			}
+			
+			
 			Igrac igracNaPoteg = igraciVoIgrata.get(indeksNaIgracotKojENaRed);
 			boolean daliUspeaDaDodeliKartaNekomu = false; // seuste ne sme
 															// dodelile nikomu
@@ -171,7 +187,20 @@ public class Igra {
 			}
 		}
 
+		System.out.println(redenSpil);
 		System.out.println("Igrata zavrsi vo " + (new Date()).toString());
+		
+		for (int j = 0; j < listaSoRezultati.size(); j++) {
+			System.out.println((j+1)+". "+listaSoRezultati.get(j).ime);
+		}
+		System.out.println((listaSoRezultati.size()+1)+". "+igraciVoIgrata.get(0).ime);
+		
+	}
+
+	private void ispecatiSostojbaNaIgraci() {
+		for (int i = 0; i < igraciVoIgrata.size(); i++) {
+			System.out.println(igraciVoIgrata.get(i) +"\n");
+		}
 	}
 
 	public boolean daliEKrajNaIgrata() {

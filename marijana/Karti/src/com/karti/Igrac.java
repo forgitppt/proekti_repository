@@ -10,6 +10,8 @@ public class Igrac {
 	ArrayList<Karta> zatvoreniKartiNaIgracot;
 	ArrayList<Karta> otvoreniKartiNaIgracot;
 
+	public boolean daliESeusteVoIgra = true;
+
 	public Igrac() {
 		String[] imeNaIgraci = new String[] { "John", "Goko", "Ace", "Mitko", "Jagoda" };
 		Random r = new Random();
@@ -24,8 +26,8 @@ public class Igrac {
 		otvoreniKartiNaIgracot = new ArrayList<>();
 	}
 
-	//dodeli karta na igracot vo zatvorenite karti
-	//se misli koga od glavniot spil se dodeluva karta na igracot
+	// dodeli karta na igracot vo zatvorenite karti
+	// se misli koga od glavniot spil se dodeluva karta na igracot
 	public void dodeliKartaNaIgracotVoZatvorenite(Karta k) {
 		zatvoreniKartiNaIgracot.add(k);
 	}
@@ -33,7 +35,7 @@ public class Igrac {
 	public void dodeliKartaNaIgracotVoOtverenite(Karta k) {
 		otvoreniKartiNaIgracot.add(k);
 	}
-	
+
 	// ova samo ke ja procita nema da ja izbrisi od spilot
 	public Karta iscitajJaNajgornataOtvorenaKarta() {
 		if (otvoreniKartiNaIgracot.size() < 1) {
@@ -58,13 +60,13 @@ public class Igrac {
 		}
 		return zatvoreniKartiNaIgracot.get(zatvoreniKartiNaIgracot.size() - 1);
 	}
-	
+
 	public Karta izbrisiJaNajgornataZatvorenaKarta() {
 		if (zatvoreniKartiNaIgracot.size() == 0) {
 			return null;// ili ke frlime greska
 		}
-		Karta najgornata = zatvoreniKartiNaIgracot.get(zatvoreniKartiNaIgracot.size()-1);
-		zatvoreniKartiNaIgracot.remove(zatvoreniKartiNaIgracot.size()-1);
+		Karta najgornata = zatvoreniKartiNaIgracot.get(zatvoreniKartiNaIgracot.size() - 1);
+		zatvoreniKartiNaIgracot.remove(zatvoreniKartiNaIgracot.size() - 1);
 		return najgornata;
 	}
 
@@ -78,7 +80,7 @@ public class Igrac {
 		for (int i = 0; i < zatvoreniKartiNaIgracot.size(); i++) {
 			s = s + " " + zatvoreniKartiNaIgracot.get(i) + ", ";
 		}
-		s=s+"\n		otvoreni:";
+		s = s + "\n		otvoreni:";
 		for (int i = 0; i < otvoreniKartiNaIgracot.size(); i++) {
 			s = s + " " + otvoreniKartiNaIgracot.get(i) + ", ";
 		}
@@ -88,11 +90,12 @@ public class Igrac {
 
 	public boolean daliMozeDaSeDodadeKartataNaIgracot(Karta karta) {
 		// proverka dali treba da se dozvoli dodavanje nakarta na ovoj igrac
-		//ovoj bi bil igracot sto bi ja dobil kartata 
-		//kartata bi se dodelila najgore vo otvorenite karti
+		// ovoj bi bil igracot sto bi ja dobil kartata
+		// kartata bi se dodelila najgore vo otvorenite karti
 
 		if (otvoreniKartiNaIgracot.size() == 0) {
-			// ako igracot nema otvoreni karti togas nisto nemoze da mu se dodeli
+			// ako igracot nema otvoreni karti togas nisto nemoze da mu se
+			// dodeli
 			return false;
 		} else {
 			// ima nekakva karta tamu
@@ -105,7 +108,7 @@ public class Igrac {
 				if (karta.getBrojka().equals(Karta.ACE)) {
 					if (najgornataOtvorenaKarta.getBoja().equals(karta.getBoja())) {
 						return true;
-					}else{
+					} else {
 						return false;
 					}
 				} else {
@@ -129,18 +132,25 @@ public class Igrac {
 			}
 		}
 	}
-	
+
 	// metoda za dodavanje na karta, ova ke ja dodade najgore
-	//t.e ovaa ke bidi kartata sto ke se gleda
+	// t.e ovaa ke bidi kartata sto ke se gleda
 	public void dodadiVoOtvoreniKartiNaIgracot(Karta karta) {
-			otvoreniKartiNaIgracot.add(karta);
+		otvoreniKartiNaIgracot.add(karta);
 	}
-	
-	public void prevrtigiOtvoreniteKartiVoZatvoreni(){
+
+	public void prevrtigiOtvoreniteKartiVoZatvoreni() {
 		zatvoreniKartiNaIgracot = new ArrayList<>();
 		for (int i = 0; i < otvoreniKartiNaIgracot.size(); i++) {
 			zatvoreniKartiNaIgracot.add(otvoreniKartiNaIgracot.get(i));
 		}
 		otvoreniKartiNaIgracot = new ArrayList<>();
+	}
+
+	public boolean daliImaUsteKarti() {
+		if (otvoreniKartiNaIgracot.size() > 0 || zatvoreniKartiNaIgracot.size() > 0) {
+			return true;
+		}
+		return false;
 	}
 }
