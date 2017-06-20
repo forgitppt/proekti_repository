@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class Spil {
 
-	int[] nizaOdBrojki;
+	//int[] nizaOdBrojki;
 	ArrayList<Karta> kartiteVoSpilot;
 
 	public Spil() {
@@ -25,6 +25,10 @@ public class Spil {
 		Karta najgornata = kartiteVoSpilot.get(kartiteVoSpilot.size()-1);
 		kartiteVoSpilot.remove(kartiteVoSpilot.size()-1);
 		return najgornata;
+	}
+	
+	public void isprazniSpil(){
+		kartiteVoSpilot.clear();
 	}
 
 	@Override
@@ -51,10 +55,11 @@ public class Spil {
 		}
 	}
 	
-	public static Spil napraviSpilOd54Karti(){
+	
+	public static Spil napraviSpilOd52Karti(){
 		Spil spil = new Spil();
 		
-		//sozdadi spil od 54 karti
+		//sozdadi spil od 52 karti
 		for (int i = 0; i < Karta.SITE_BOI.length; i++) {
 			String momentalnaBoja = Karta.SITE_BOI[i];
 			for (int j = 0; j < Karta.SITE_BROJKI.length; j++) {
@@ -64,6 +69,11 @@ public class Spil {
 				spil.dodadiKarta(k);
 			}
 		}
+		return spil;
+	}
+	
+	public static Spil napraviSpilOd54Karti(){
+		Spil spil = Spil.napraviSpilOd52Karti();
 		
 		Joker j1 = new Joker();
 		Joker j2 = new Joker();
@@ -74,6 +84,8 @@ public class Spil {
 		return spil;
 	}
 	
+	//ovaa metoda posle razvojot na aplikacijata moze da se izbrise
+	//pomaga samo za testiranje
 	public static Spil napraviPrivremenMalSpilZaTestiranje(){
 		Spil spil = new Spil();
 

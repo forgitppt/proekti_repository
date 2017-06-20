@@ -1,4 +1,4 @@
-пон, 22 мај 18:37:06 CEST 2017
+﻿пон, 22 мај 18:37:06 CEST 2017
  
 Ne gibaj tuka :)
 
@@ -29,7 +29,7 @@ busava_azbuka.txt			|               |               |               |           
 niza_sobiranje_pa_odzemanje.txt*	|               |               |               |               |               |
 					|               |               |               |               |               |
 					|               |               |               |               |               |
-					|               |               |               |               |               |
+kojn*					|               |               |               |               |               |
 					|               |               |               |               |               |
 					|               |               |               |               |               |
 					|               |               |               |               |               |

@@ -32,8 +32,14 @@ public class NaredenSpilKartiVoSredina {
 					return true;
 				} else {
 					return false;
-				}
+				}	
 			} else {
+				if(karta.getBrojka().equals("2")){
+					int a = 0;
+					if(1<10){
+						String s = "fdsfds"+1;
+					}
+				}
 				//sto ako e bilo sto osven KING
 				if(poslednataNaSredina.getBoja().equals(karta.getBoja())){
 					//mozebi smeeme da dodademe
@@ -53,7 +59,8 @@ public class NaredenSpilKartiVoSredina {
 		return false;
 	}
 
-	// metoda za dodavanje
+	// metoda za dodavanje na karta vo sredina, ova ke ja dodade najgore
+	//t.e ovaa ke bidi kartata sto ke se gleda
 	public void dodadiKartaVoSredina(Karta karta) {
 		// dodavame samo ako ni dozvoli validacijata
 		if (daliMozeDaSeDodadeKartataVoSredina(karta)) {
@@ -73,12 +80,20 @@ public class NaredenSpilKartiVoSredina {
 		return s;
 	}
 	
-	public int zemiRedosled(String brojkaOdKarta){
-		for (int i = 0; i < Karta.SITE_BROJKI.length-1; i++) {
+	//todo ovaa metoda treba da se prefrli vo nekoja pomosna klasa (UtilClass)
+	public static int zemiRedosled(String brojkaOdKarta){
+		for (int i = 0; i < Karta.SITE_BROJKI.length; i++) {
 			if(brojkaOdKarta.equals(Karta.SITE_BROJKI[i])){
 				return i;
 			}
 		}
 		return -1;//nesto se sjeba
+	}
+
+	public boolean daliENareden() {
+		//todo podobra proverka dali spilot e nareden
+		
+		//zasega za nareden spil ke go smetame onoj sto sodrzi 52 karti
+		return kartiteVoSredina.size() == 52;
 	}
 }

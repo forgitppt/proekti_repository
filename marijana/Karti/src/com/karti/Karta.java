@@ -19,8 +19,8 @@ public class Karta {
 	public static final String QUEEN = "Q";
 	public static final String KING = "K";
 
-	public static String[] SITE_BOI = new String[] { KARO, SRCE, TREF, PIK };
-	public static String[] SITE_BROJKI = new String[] { ACE, "2", "3", "4", "5", "6", "7", "8", "9", "10", JACK, QUEEN,
+	public static final String[] SITE_BOI = new String[] { KARO, SRCE, TREF, PIK };
+	public static final String[] SITE_BROJKI = new String[] { ACE, "2", "3", "4", "5", "6", "7", "8", "9", "10", JACK, QUEEN,
 			KING };
 
 	private String brojka;
