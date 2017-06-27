@@ -12,9 +12,9 @@ Proveruvajte oglasna tabla (oglasnaTabla.txt)
 
 *******************************************************************************
 
-cas 9 ke se odrzina 15ti
-	na 19ti i 22ri nema da ima cas
-	na 26ti isto taka nema da ima cas (praznik e)
+Se gledame ovaj cetvrtok t.e na 29ti
+nezaboravajte da komitirate toa sto ste rabotele
+
 cas 10 ke se odrzina 29ti
 cas 11 ke se odrzina 3ti
 
