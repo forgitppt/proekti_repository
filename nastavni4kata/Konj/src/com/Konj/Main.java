@@ -31,13 +31,21 @@ public class Main {
 //		String tekstZaZapisuvanje = procitanTekst + "\n" + "SUM: " +sum;
 //		IO.saveTextToFile(tekstZaZapisuvanje, "d:/java2/a.txt");
 		
-		String tekstZaZapisuvanje = "";
-		for (int i = 0; i < 100; i++) {
-			tekstZaZapisuvanje = tekstZaZapisuvanje + i + System.getProperty("line.separator");
-		}
-		IO.saveTextToFile(tekstZaZapisuvanje, "d:/java2/100.txt");
+//		String tekstZaZapisuvanje = "";
+//		for (int i = 0; i < 100; i++) {
+//			tekstZaZapisuvanje = tekstZaZapisuvanje + i + System.getProperty("line.separator");
+//		}
+//		IO.saveTextToFile(tekstZaZapisuvanje, "d:/java2/100.txt");
+		
+		
+		
+//		KojnInterface k = new Petko();
+//		KojnInterface k2 = new Trajko();
+//		KojnInterface k3 = new Mustang();
+		
+		
 	}
 
-	
+ 
 	
 }
