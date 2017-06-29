@@ -50,3 +50,6 @@ Vo slucaj da ima odlozuvanje ve molam ovaj pat iskoristete go terminot za aktivn
 
 
 
+kniga
+https://zimslifeintcs.files.wordpress.com/2011/12/head-first-java-2nd-edition.pdf
+
