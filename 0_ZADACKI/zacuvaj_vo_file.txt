@@ -1,0 +1,57 @@
+Sat Jul  1 19:39:41 CEST 2017
+
+1.
+Napisi funkcija koja ke gi zacuva broevite od 1 do 100 vo file 
+fajlot treba da se izgleda vaka
+
+1
+2
+3
+... (ova se site brojki izmegu)
+100
+
+
+2.
+Vtora funkcija koja ke go iscita fajl, i ke ispisi kolku parni broevi ima
+
+na primer ako fajlot ima sodrzina
+1
+2
+3
+4
+5
+
+funkcijata ke ispisi 2 (bidejki samo 2 i 4 se parni)
+
+3.
+Funkcija koja ke ispisi broj i faktoriel od toj broj
+
+pocetokot na fajlot ke izgleda vaka
+
+1! = 1
+2! = 2
+3! = 6
+4! = 24
+5! = 120
+
+napravetego za do 10!
+
+
+
+4.
+iscitajte nekoj fajl i kazete kolku linii ima toj fajl
+kolku karakteri
+kolku prazni mesta
+
+5.
+funkcija koja ke dobie pateka od fajl i String (koj ke oznacuva odreden zbor)
+a nazad ke ispisi  kolku pati toj zbor se pojavuva
+
+public int kolkuPatiGoImaZborotVoNekojFile(String patekaDoFile, String zborKojGoBarame){
+
+	return 5;//primer 5 ako 5 pati se pojavil
+}
+
+
+
+
