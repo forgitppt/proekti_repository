@@ -33,7 +33,7 @@ kojn*					|               |               |               |               |     
 					|               |               |               |               |               |
 zacuvaj/procitaj od/vo file		|               |               |               |               |               |
 piramida*				|               |               |               |               |               |
-					|               |               |               |               |               |
+floats to ints				|               |               |               |               |               |
 					|               |               |               |               |               |
 					|               |               |               |               |               |
 					|               |               |               |               |               |

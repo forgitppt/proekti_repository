@@ -1,0 +1,50 @@
+Sat Jul  1 19:57:46 CEST 2017
+
+
+
+imate fajl so floats (or doubles) 
+primer
+
+1.12
+1.34543
+10.1
+123452.1
+231423432.0
+23234.243432432
+1.1
+123.123
+
+napravete novi 2 fajla kade sto ke gi ima
+-vo edniot samo celite vrednosti
+-vo drugiot samo decimalnite
+
+primer
+
+file1:
+1
+1
+10
+123452
+231423432
+23234
+1
+123
+
+file2:
+12
+34543
+1
+1
+0
+243432432
+1
+123
+
+
+
+
+
+
+
+
+
