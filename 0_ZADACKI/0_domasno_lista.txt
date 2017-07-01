@@ -32,7 +32,7 @@ niza_sobiranje_pa_odzemanje.txt*	|               |               |              
 kojn*					|               |               |               |               |               |
 					|               |               |               |               |               |
 zacuvaj/procitaj od/vo file		|               |               |               |               |               |
-					|               |               |               |               |               |
+piramida*				|               |               |               |               |               |
 					|               |               |               |               |               |
 					|               |               |               |               |               |
 					|               |               |               |               |               |

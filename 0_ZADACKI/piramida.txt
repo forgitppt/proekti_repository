@@ -1,0 +1,28 @@
+Sat Jul  1 19:51:37 CEST 2017
+
+
+funkcija sto na vlez ke dobie broj koj ke ja oznacuva visinata na piramidata
+na izlez ke ja ispisi piramidata
+(ili pak neka ja zacuva piramidata vo file)
+
+primer za 1 piramidata izleda vaka
+
+*
+
+za 2
+
+ *
+***
+
+za 3
+
+  *
+ ***
+*****
+
+za 4
+
+   *
+  ***
+ *****
+*******
